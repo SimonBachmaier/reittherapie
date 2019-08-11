@@ -6,6 +6,20 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "horse"
+    label: "Pferd"
+    folder: "src/pages/pferde"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "horse"}
+      - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Kurzbeschreibung", name: "description", widget: "string"}
+      - {label: "Titel neben Bild", name: "headline", widget: "string"}
+      - {label: "Untertitel neben Bild", name: "subheadline", widget: "string"}
+      - {label: "Beschreibung neben Bild", name: "body", widget: "markdown"}
+
   - name: "pages"
     label: "Pages"
     files:
