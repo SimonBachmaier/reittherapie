@@ -45,7 +45,7 @@ const Header = () => {
                         <Nav className="ml-auto pl-lg-5 pl-0">
                             <NavLink to="/" label="Home" />
                             <NavLink to="https://www.google.com" external={true} label="Google" />
-                            <NavDropdown title={dropDown1.label} id="nav-dropdown" active={window.location.pathname.indexOf(dropDown1.route) > -1 ? true : false}>
+                            <NavDropdown title={dropDown1.label} id="nav-dropdown" active={(typeof window !== 'undefined' && (window.location.pathname.indexOf(dropDown1.route) > -1)) ? true : false}>
                                 <NavDropdownLink to="/" label="Home" />
                                 <NavDropdownLink to="/test" label="Test" />
                                 <NavDropdown.Divider />
