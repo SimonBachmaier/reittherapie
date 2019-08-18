@@ -3,50 +3,36 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import TextImage from '../components/TextImage';
-import HorseCarousel from '../components/HorseCarousel';
 import Text from '../components/Text';
 import SiteSection from '../components/SiteSection';
 
 
-const Pferd = ({data}) => {
+const About = ({data}) => {
   let md = data.markdownRemark;
   return (
     <Layout headerText={md.frontmatter.siteTitle}>
       <SiteSection>
-        <Text className=""
-          headline={md.frontmatter.name}
-          subheadline={md.frontmatter.description}
-          centered={true}
-        >
-        </Text>
         <TextImage className="pt-5"
           fluidImage={md.frontmatter.image.childImageSharp.fluid}
           headline={md.frontmatter.headline}
           subheadline={md.frontmatter.subheadline}
+          html={md.html}
         >
-          {md.html}
         </TextImage> 
-      </SiteSection>
-      <SiteSection>
-        <HorseCarousel className="" current={md.fields.slug} noButtons={true} />
+        <Text html={md.html} />
       </SiteSection>
       
     </Layout>
   )
 }
 
-export default Pferd;
+export default About;
 
 export const pageQuery = graphql`
-  query HorseByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      fields {
-        slug
-      }
+  query AboutPage {
+    markdownRemark(frontmatter: {templateKey: { eq: "about" }}) {
       frontmatter {
         siteTitle
-        name
-        description
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

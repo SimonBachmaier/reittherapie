@@ -7,7 +7,8 @@ public_folder: /img
 
 collections:
   - name: "horse"
-    label: "Pferd"
+    identifier_field: "name"
+    label: "Pferde"
     folder: "src/pages/pferde"
     create: true
     slug: "{{slug}}"
@@ -16,12 +17,13 @@ collections:
       - {label: "Seitentitel", name: "siteTitle", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Kurzbeschreibung", name: "description", widget: "string"}
+      - {label: "Bild", name: "image", widget: "image"}
       - {label: "Titel neben Bild", name: "headline", widget: "string"}
       - {label: "Untertitel neben Bild", name: "subheadline", widget: "string"}
       - {label: "Beschreibung neben Bild", name: "body", widget: "markdown"}
 
   - name: "pages"
-    label: "Pages"
+    label: "Seiten"
     files:
       - file: "src/pages/index.md"
         label: "Startseite"
@@ -33,3 +35,14 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: markdown}
           - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
+      - file: "src/pages/ueber-mich.md"
+        label: "Über mich"
+        name: "ueber-mich"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
+          - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+          - {label: "Bild", name: "image", widget: "image"}
+          - {label: "Titel neben Bild", name: "headline", widget: "string"}
+          - {label: "Untertitel neben Bild", name: "subheadline", widget: "string"}
+          - {label: "Beschreibung neben Bild", name: "textNextToImage", widget: "markdown"}
+          - {label: "Fließtext", name: "body", widget: "markdown"}

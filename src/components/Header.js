@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import Container from 'react-bootstrap/Container';
 import { Location } from '@reach/router';
 
@@ -31,6 +31,23 @@ const NavDropdownLink = (props) => {
 };
 
 const Header = () => {
+    const data = useStaticQuery(graphql`
+        query HeaderQuery {
+            allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "horse"}}}) {
+                edges {
+                    node {
+                        frontmatter {
+                            name
+                        }
+                        fields {
+                            slug
+                        }
+                    }
+                }
+            }
+        }
+    `);
+
     return (
         <header role="banner">
             <Navbar bg="light" variant="dark" expand="md">
@@ -42,7 +59,6 @@ const Header = () => {
                         <Nav className="ml-auto pl-lg-5 pl-0">
                             <Location>
                                 {({ location }) => {
-                                    console.log('location',location)
                                     return (
                                         <React.Fragment>
                                             <NavLink to="/" label="Home" />
@@ -54,8 +70,11 @@ const Header = () => {
                                             </NavDropdown>
                                             <NavLink to="/ueber-mich" label="Über mich" />
                                             <NavDropdown title="Pferde" id="nav-dropdown" active={location.pathname.indexOf('pferde') > -1}>
-                                                <NavDropdownLink to="/pferde/" label="Duna" />
-                                                <NavDropdownLink to="/pferde/" label="Einstein" />
+                                                {data.allMarkdownRemark.edges.map((item, index)=> {
+                                                    return (
+                                                        <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
+                                                    );
+                                                })}
                                             </NavDropdown>
                                         </React.Fragment>
                                     )

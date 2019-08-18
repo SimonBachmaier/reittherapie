@@ -1,11 +1,35 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/scss/alice-carousel.scss';
-import { Link } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 export default (props) => {
+    const data = useStaticQuery(graphql`
+        query HorseCarouselQuery {
+            allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "horse"}}}) {
+                edges {
+                    node {
+                        frontmatter {
+                            name
+                            image {
+                                childImageSharp {
+                                    fluid(maxWidth: 512, quality: 90) {
+                                    ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                        fields {
+                            slug
+                        }
+                    }
+                }
+            }
+        }
+    `);
+    
     let Carousel;
     return (
         <Row className={props.className}>
@@ -14,8 +38,15 @@ export default (props) => {
                 <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facere a excepturi quod impedit rerum ipsum totam incidunt, necessitatibus id veritatis maiores quos saepe dolore commodi magnam fugiat. Incidunt, omnis.</p>
                 
                 <div className="mb-3 custom-nav">
-                <button className="btn btn-primary btn-sm custom-prev mr-2 mb-2" onClick={() => Carousel.slidePrev()}><span className="fa fa-arrow-left"></span></button> 
-                <button className="btn btn-primary btn-sm custom-next mr-2 mb-2" onClick={() => Carousel.slideNext()}><span className="fa fa-arrow-right"></span></button>
+                {props.noButtons ? (
+                    ''
+                ) : (
+                    <React.Fragment>
+                        <button className="btn btn-primary btn-sm custom-prev mr-2 mb-2" onClick={() => Carousel.slidePrev()}><span className="fa fa-arrow-left"></span></button> 
+                        <button className="btn btn-primary btn-sm custom-next mr-2 mb-2" onClick={() => Carousel.slideNext()}><span className="fa fa-arrow-right"></span></button>
+                    </React.Fragment>
+                )}
+                
                 </div>
             </Col>
             <Col md="8">
@@ -35,55 +66,21 @@ export default (props) => {
                                 items: 3
                             }
                         }}>
-                            <div>
-                                <Link to="/" className="img-bg" style={{'backgroundImage': "url('https://www.hanaeleh.org/wp-content/uploads/2018/01/Tamahome-12-24-17-768x1024.jpg')"}}>
-                                    <div className="text">
-                                        {/* <span className="icon custom-icon flaticon-scissors"></span> */}
-                                        <h2>Duna</h2>
-                                        <p>Mehr über mich</p>
+                            {data.allMarkdownRemark.edges.map((item, index) => {
+                                if (props.current === item.node.fields.slug) {
+                                    return '';
+                                }
+                                return(
+                                    <div key={index}>
+                                        <Link to={item.node.fields.slug} className="img-bg" style={{'backgroundImage': "url('" + item.node.frontmatter.image.childImageSharp.fluid.src + "')"}}>
+                                            <div className="text">
+                                                <h2>{item.node.frontmatter.name}</h2>
+                                                <p>Mehr über mich</p>
+                                            </div>
+                                        </Link>
                                     </div>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to="/" className="img-bg" style={{'backgroundImage': "url('https://www.hanaeleh.org/wp-content/uploads/2018/01/Tamahome-12-24-17-768x1024.jpg')"}}>
-                                    <div className="text">
-                                        <h2>Einstein</h2>
-                                        <p>Mehr über mich</p>
-                                    </div>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to="/" className="img-bg" style={{'backgroundImage': "url('https://www.hanaeleh.org/wp-content/uploads/2018/01/Tamahome-12-24-17-768x1024.jpg')"}}>
-                                    <div className="text">
-                                        <h2>Missy</h2>
-                                        <p>Mehr über mich</p>
-                                    </div>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to="/" className="img-bg" style={{'backgroundImage': "url('https://www.hanaeleh.org/wp-content/uploads/2018/01/Tamahome-12-24-17-768x1024.jpg')"}}>
-                                    <div className="text">
-                                        <h2>Pferd</h2>
-                                        <p>Mehr über mich</p>
-                                    </div>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to="/" className="img-bg" style={{'backgroundImage': "url('https://www.hanaeleh.org/wp-content/uploads/2018/01/Tamahome-12-24-17-768x1024.jpg')"}}>
-                                    <div className="text">
-                                        <h2>Pferd</h2>
-                                        <p>Mehr über mich</p>
-                                    </div>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to="/" className="img-bg" style={{'backgroundImage': "url('https://www.hanaeleh.org/wp-content/uploads/2018/01/Tamahome-12-24-17-768x1024.jpg')"}}>
-                                    <div className="text">
-                                        <h2>Pferd</h2>
-                                        <p>Mehr über mich</p>
-                                    </div>
-                                </Link>
-                            </div>
+                                );
+                            })}
                         </AliceCarousel>
                     </Col>
                 </Row>
