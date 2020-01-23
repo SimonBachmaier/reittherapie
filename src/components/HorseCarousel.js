@@ -62,6 +62,9 @@ export default (props) => {
                             0: {
                                 items: 1
                             },
+                            440: {
+                                items: 2
+                            },
                             1024: {
                                 items: 3
                             }

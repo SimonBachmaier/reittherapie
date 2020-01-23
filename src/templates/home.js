@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import TextImage from '../components/TextImage';
+// import TextImage from '../components/TextImage';
 import HorseCarousel from '../components/HorseCarousel';
 import Text from '../components/Text';
 import SiteSection from '../components/SiteSection';
-import Features from '../components/features';
+import FeaturesSection from '../components/FeaturesSection';
 
 
 const IndexPage = ({ data }) => {
@@ -26,20 +26,18 @@ const IndexPage = ({ data }) => {
         </Text> 
       </SiteSection>
 
-      <SiteSection>
-        <TextImage className=""
-
-        />
+      <SiteSection> 
+        <HorseCarousel className="" />
       </SiteSection>
-      <SiteSection> <HorseCarousel className="" /> </SiteSection>
+      
       <SiteSection>
         <Text centered={true}
-              subheadline="Unsere Leistungen"
+              subheadline="Arbeit am Pferd"
           >
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.</p>
           </Text>
 
-          <Features />
+          <FeaturesSection />
       </SiteSection>
     
     </Layout>

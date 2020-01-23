@@ -1,3 +1,7 @@
+.site-title-fancy {
+    font-family: 'tahuregular'; 
+}
+
 .alice-carousel {
     li > div {
         margin-right: 10px;
@@ -10,3 +14,50 @@
 a.media.media-feature {
     color: unset;
 }
+
+.irregular-row-width-fix {
+    width: 100%;
+}
+
+@media screen and (min-width: 575px) {
+    .site-title-fancy {
+        font-size: 104px !important;
+    }
+    .quick-info .media {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .quick-info .media {
+        padding: 0 16px;
+    }
+}
+@media screen and (max-width: 404px) {
+    a.navbar-brand {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 375px) {
+    a.navbar-brand {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 340px) {
+    a.navbar-brand {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 330px) {
+    a.navbar-brand {
+        font-size: 13px;
+    }
+}
+
+// Debugging
+// * {
+//     background: #000 !important;
+//     color: #0f0 !important;
+//     outline: solid #f00 1px !important;
+//   }

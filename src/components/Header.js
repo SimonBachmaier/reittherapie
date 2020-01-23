@@ -33,7 +33,7 @@ const NavDropdownLink = (props) => {
 const Header = () => {
     const data = useStaticQuery(graphql`
         query HeaderQuery {
-            allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "horse"}}}) {
+            allMarkdownRemark(filter: {frontmatter: {templateKey: {in: ["horse", "feature"]}}}) {
                 edges {
                     node {
                         frontmatter {
@@ -62,18 +62,25 @@ const Header = () => {
                                     return (
                                         <React.Fragment>
                                             <NavLink to="/" label="Home" />
-                                            <NavDropdown title="Leistungen" id="nav-dropdown" active={location.pathname.indexOf('leistungen') > -1}>
-                                                <NavDropdownLink to="/leistungen/" label="Reittherapie" />
-                                                <NavDropdownLink to="/leistungen/" label="Hippotherapie" />
-                                                <NavDropdownLink to="/leistungen/" label="Ergotherapie" />
-                                                <NavDropdownLink to="/leistungen/" label="Pädagogische Förderung" />
+                                            <NavDropdown title="Leistungen" id="nav-dropdown" active={location.pathname.indexOf('/leistungen/') > -1}>
+                                                {data.allMarkdownRemark.edges.map((item, index)=> {
+                                                    if (item.node.fields.slug.indexOf('/leistungen/')  > -1){
+                                                        return (
+                                                            <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
+                                                        )   ;
+                                                    }
+                                                    return '';
+                                                })}
                                             </NavDropdown>
                                             <NavLink to="/ueber-mich" label="Über mich" />
-                                            <NavDropdown title="Pferde" id="nav-dropdown" active={location.pathname.indexOf('pferde') > -1}>
+                                            <NavDropdown title="Pferde" id="nav-dropdown" active={location.pathname.indexOf('/pferde/') > -1}>
                                                 {data.allMarkdownRemark.edges.map((item, index)=> {
-                                                    return (
-                                                        <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
-                                                    );
+                                                    if (item.node.fields.slug.indexOf('/pferde/') > -1){
+                                                        return (
+                                                            <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
+                                                        )   ;
+                                                    }
+                                                    return '';
                                                 })}
                                             </NavDropdown>
                                         </React.Fragment>

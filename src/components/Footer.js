@@ -10,20 +10,20 @@ const Footer = () => {
             <Container>
                 <Row className="mb-5">
                     <Col md="4">
-                        <h3 className="mb-4">About</h3>
+                        <h3 className="mb-4">Kontakt</h3>
                         <p className="mb-4">Reittherapie Göhren mit Petra Bachmaier:<br />Professionelle Begleitung für Ihr Kind und Sie.</p>
                         <ul className="list-unstyled ">
                         <li className="d-flex"><span className="mr-3"><span className="fa fa-map-marker"></span></span><span className="">Göhren 14, 91788 Pappenheim</span></li>
-                        <li className="d-flex"><span className="mr-3"><span className="fa fa-phone"></span></span><span className="">+1 242 4942 290</span></li>
-                        <li className="d-flex"><span className="mr-3"><span className="fa fa-envelope"></span></span><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></li>
+                        <li className="d-flex"><span className="mr-3"><span className="fa fa-phone"></span></span><span className="">09143-6518</span></li>
+                        <li className="d-flex"><span className="mr-3"><span className="fa fa-envelope"></span></span><a href="mailto:info@yourdomain.com">reittherapie.bachmaier@gmail.com</a></li>
                         </ul>
                     </Col>
-                    <Col md="2">
+                    {/* <Col md="2">
                         <h3 className="mb-4">Links</h3>
                         <ul className="list-unstyled ">
                             <li><Link to="/">Home</Link></li>
                         </ul>
-                    </Col>
+                    </Col> */}
                     {/* <Col md="3">
                         <h3 className="mb-4">Latest Blog</h3>
                         <ul className="list-unstyled blog-entry-footer">

@@ -22,6 +22,23 @@ collections:
       - {label: "Untertitel neben Bild", name: "subheadline", widget: "string"}
       - {label: "Beschreibung neben Bild", name: "body", widget: "markdown"}
 
+  - name: "feature"
+    identifier_field: "name"
+    label: "Leistungen"
+    folder: "src/pages/leistungen"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "horse"}
+      - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Kurzbeschreibung", name: "description", widget: "string"}
+      - {label: "Bild", name: "image", widget: "image"}
+      - {label: "Titel neben Bild", name: "headline", widget: "string"}
+      - {label: "Untertitel neben Bild", name: "subheadline", widget: "string"}
+      - {label: "Beschreibung neben Bild", name: "textNextToImage", widget: "markdown"}
+      - {label: "Beschreibung neben Bild", name: "body", widget: "markdown"}
+
   - name: "pages"
     label: "Seiten"
     files:
@@ -45,4 +62,20 @@ collections:
           - {label: "Titel neben Bild", name: "headline", widget: "string"}
           - {label: "Untertitel neben Bild", name: "subheadline", widget: "string"}
           - {label: "Beschreibung neben Bild", name: "textNextToImage", widget: "markdown"}
+          - {label: "Fließtext", name: "body", widget: "markdown"}
+      - file: "src/pages/impressum.md"
+        label: "Impressum"
+        name: "impressum"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "text"}
+          - {label: "ID", name: "id", widget: "hidden"}
+          - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+          - {label: "Fließtext", name: "body", widget: "markdown"}
+      - file: "src/pages/datenschutz.md"
+        label: "Datenschutzerklärung"
+        name: "datenschutz"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "text"}
+          - {label: "ID", name: "id", widget: "hidden"}
+          - {label: "Seitentitel", name: "siteTitle", widget: "string"}
           - {label: "Fließtext", name: "body", widget: "markdown"}

@@ -21,7 +21,7 @@ const About = ({data}) => {
         </TextImage> 
         <Text html={md.html} />
       </SiteSection>
-      
+
     </Layout>
   )
 }
@@ -29,10 +29,12 @@ const About = ({data}) => {
 export default About;
 
 export const pageQuery = graphql`
-  query AboutPage {
-    markdownRemark(frontmatter: {templateKey: { eq: "about" }}) {
+  query FeaturePage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         siteTitle
+        name
+        description
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

@@ -68,4 +68,4 @@ export default (props) => {
             </Row>
         </React.Fragment>
     )
-}
+};

@@ -28,7 +28,7 @@ const HeroImage = (props) => {
                                 <Row className="align-items-center site-hero-inner justify-content-center">
                                     <Col md="8" className="text-center">
                                         <Reveal className="mb-5" tag="div">
-                                            <h1 style={props.fancyFont ? { fontFamily: 'tahuregular', 'fontSize': '104px' } : {}}>{props.title}</h1>
+                                            <h1 className={props.fancyFont ? 'site-title-fancy' : ''}>{props.title}</h1>
                                         </Reveal>
                                     </Col>
                                 </Row>

@@ -10,13 +10,13 @@ const QuickInfo = () => {
             <Container>
                 <Row>
                     <Col lg="8" className="bgcolor">
-                        <Row>
+                        <Row className="irregular-row-width-fix">
                             <Col md="5" className="mb-3">
                                 <div className="media">
                                     <div className="mr-3 icon-wrap"><span className="fa fa-phone"></span></div>
                                     <div className="media-body">
-                                        <h5>+1 234 5633 342</h5>
-                                        <p>Für nähere Informationen rufen Sie uns gerne einfach an.</p>
+                                        <h5>09143-6518</h5>
+                                        <p>Für nähere Informationen rufen Sie uns gerne direkt an.</p>
                                     </div>
                                 </div>
                             </Col>
@@ -31,10 +31,10 @@ const QuickInfo = () => {
                             </Col>
                             <Col md="3" className="mb-3">
                                 <div className="media">
-                                    <div className="mr-3 icon-wrap"><span className="fa fa-clock-o"></span></div>
+                                    <div className="mr-3 icon-wrap"><span className="fa fa-envelope"></span></div>
                                     <div className="media-body">
-                                        <h5>8:00 - 17:00 Uhr</h5>
-                                        <p>Mon-Fri, Samstag</p>
+                                        <h5>E-Mail</h5>
+                                        <p>Klicken Sie <a href="mailto:reittherapie.bachmaier@gmail.com">hier</a>.</p>
                                     </div>
                                 </div>
                             </Col>

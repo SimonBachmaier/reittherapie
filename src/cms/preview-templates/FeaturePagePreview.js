@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Page from '../../templates/horse'
+import Page from '../../templates/feature'
 
 const PagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
