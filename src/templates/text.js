@@ -9,7 +9,7 @@ import SiteSection from '../components/SiteSection';
 const TextPage = ({data}) => {
   let md = data.markdownRemark;
   return (
-    <Layout headerText={md.frontmatter.siteTitle}>
+    <Layout headerText={md.frontmatter.siteTitle}  siteTitle={md.frontmatter.siteTitle}>
       <SiteSection>
         <Text html={md.html} />
 

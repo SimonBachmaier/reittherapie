@@ -1,9 +1,10 @@
 ---
 templateKey: feature
 siteTitle: Pferdesport
+headerImage: /img/header-image.jpg
 image: /img/horse-headshot.jpg
 name: Pferdesport für Menschen mit Behinderung
-description: Mensch und Tier in Harmonie
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda rem nulla odio iure animi repellat voluptates ullam omnis enim?
 headline: In sicheren Händen
 subheadline: Mensch und Tier in Harmonie
 textNextToImage: >-

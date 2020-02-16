@@ -1,6 +1,7 @@
 ---
 templateKey: horse
 siteTitle: Unsere Therapiepferde
+headerImage: /img/header-image.jpg
 description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
 name: Missy
 image: /img/horse-headshot.jpg

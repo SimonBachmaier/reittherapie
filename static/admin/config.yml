@@ -15,6 +15,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "horse"}
       - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+      - {label: "Header-Bild", name: "headerImage", widget: "image"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Kurzbeschreibung", name: "description", widget: "string"}
       - {label: "Bild", name: "image", widget: "image"}
@@ -31,13 +32,14 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "horse"}
       - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+      - {label: "Header-Bild", name: "headerImage", widget: "image"}
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "Kurzbeschreibung", name: "description", widget: "string"}
+      - {label: "Kurzbeschreibung (für Übersicht)", name: "description", widget: "string"}
       - {label: "Bild", name: "image", widget: "image"}
       - {label: "Titel neben Bild", name: "headline", widget: "string"}
       - {label: "Untertitel neben Bild", name: "subheadline", widget: "string"}
       - {label: "Beschreibung neben Bild", name: "textNextToImage", widget: "markdown"}
-      - {label: "Beschreibung neben Bild", name: "body", widget: "markdown"}
+      - {label: "Fließtext", name: "body", widget: "markdown"}
 
   - name: "pages"
     label: "Seiten"
@@ -46,18 +48,19 @@ collections:
         label: "Startseite"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: markdown}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home"}
+          - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+          - {label: "Header-Bild", name: "headerImage", widget: "image"}
+          - {label: "Titel", name: headline, widget: string}
+          - {label: "Untertitel", name: subheadline, widget: markdown}
+          - {label: "Fließtext", name: "body", widget: "markdown"}
       - file: "src/pages/ueber-mich.md"
         label: "Über mich"
         name: "ueber-mich"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about"}
           - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+          - {label: "Header-Bild", name: "headerImage", widget: "image"}
           - {label: "Bild", name: "image", widget: "image"}
           - {label: "Titel neben Bild", name: "headline", widget: "string"}
           - {label: "Untertitel neben Bild", name: "subheadline", widget: "string"}

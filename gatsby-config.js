@@ -2,9 +2,9 @@ var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Reittherapie Bachmaier',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Reittherapie im Altmühltal mit Petra Bachmaier. Geschult in den Bereichen Reittherapie, Ergotherapie und mehr führe ich Sie oder Ihr Kind als gelernte Erzieherin mit meinen Therapiepferden hin zu einem ausgeglicheneren Leben.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -15,13 +15,6 @@ module.exports = {
       options: {
         path: `${__dirname}/static/img`,
         name: 'uploads',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
       },
     },
     {
@@ -62,6 +55,30 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Reittherapie Bachmaier`,
+        short_name: `Reittherapie`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
+        display: `standalone`,
+        icon: "static/img/favicon/android-chrome-512x512.png",
+        // "icons":[
+        //   {
+        //     "src":"static/img/favicon/android-chrome-192x192.png",
+        //     "sizes":"192x192",
+        //     "type":"image/png"
+        //   },
+        //   {
+        //     "/src":"static/img/favicon/android-chrome-512x512.png",
+        //     "sizes":"512x512",
+        //     "type":"image/png"
+        //   }
+        // ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
@@ -75,6 +92,7 @@ module.exports = {
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
+    'gatsby-plugin-offline',
   ],
   // for avoiding CORS while developing Netlify Functions locally
   // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying

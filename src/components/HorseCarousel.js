@@ -16,7 +16,7 @@ export default (props) => {
                             image {
                                 childImageSharp {
                                     fluid(maxWidth: 512, quality: 90) {
-                                    ...GatsbyImageSharpFluid
+                                    ...GatsbyImageSharpFluid_noBase64
                                     }
                                 }
                             }
@@ -42,8 +42,8 @@ export default (props) => {
                     ''
                 ) : (
                     <React.Fragment>
-                        <button className="btn btn-primary btn-sm custom-prev mr-2 mb-2" onClick={() => Carousel.slidePrev()}><span className="fa fa-arrow-left"></span></button> 
-                        <button className="btn btn-primary btn-sm custom-next mr-2 mb-2" onClick={() => Carousel.slideNext()}><span className="fa fa-arrow-right"></span></button>
+                        <button className="btn btn-primary btn-sm custom-prev mr-2 mb-2" onClick={() => Carousel.slidePrev()} aria-label="Vorheriges Pferd"><span className="fa fa-arrow-left"></span></button> 
+                        <button className="btn btn-primary btn-sm custom-next mr-2 mb-2" onClick={() => Carousel.slideNext()} aria-label="Nächstes Pferd"><span className="fa fa-arrow-right"></span></button>
                     </React.Fragment>
                 )}
                 

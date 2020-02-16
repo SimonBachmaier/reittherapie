@@ -14,7 +14,7 @@ const Footer = () => {
                         <p className="mb-4">Reittherapie Göhren mit Petra Bachmaier:<br />Professionelle Begleitung für Ihr Kind und Sie.</p>
                         <ul className="list-unstyled ">
                         <li className="d-flex"><span className="mr-3"><span className="fa fa-map-marker"></span></span><span className="">Göhren 14, 91788 Pappenheim</span></li>
-                        <li className="d-flex"><span className="mr-3"><span className="fa fa-phone"></span></span><span className="">09143-6518</span></li>
+                        <li className="d-flex"><span className="mr-3"><span className="fa fa-phone"></span></span><span className=""><a href="tel:09143 6518">09143 6518</a></span></li>
                         <li className="d-flex"><span className="mr-3"><span className="fa fa-envelope"></span></span><a href="mailto:info@yourdomain.com">reittherapie.bachmaier@gmail.com</a></li>
                         </ul>
                     </Col>

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
@@ -11,19 +10,16 @@ import FeaturesSection from '../components/FeaturesSection';
 
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
-  console.log(frontmatter);
+  let md = data.markdownRemark;
   return (
-    <Layout headerText="Reittherapie im Altmühltal" fancyFont={true}>
+    <Layout headerText={md.frontmatter.siteTitle} fancyFont={true} headerImage={md.frontmatter.headerImage.childImageSharp}>
 
       <SiteSection> 
         <Text className=""
-          headline="Reittherapie für ein gesünderes Leben"
-          subheadline="Mensch und Tier in Harmonie"
-        >
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facere a excepturi quod impedit rerum ipsum totam incidunt, necessitatibus id veritatis maiores quos saepe dolore commodi magnam fugiat. Incidunt, omnis.</p>
-                          <p>Nobis quae eaque facere architecto eligendi, voluptas quasi, blanditiis aperiam possimus inventore quis nam! Cupiditate necessitatibus, voluptatem excepturi placeat exercitationem quos vitae ut vero dolorem, provident sit odio porro facere.</p>
-        </Text> 
+          headline={md.frontmatter.headline}
+          subheadline={md.frontmatter.subheadline}
+          html={md.html}
+         /> 
       </SiteSection>
 
       <SiteSection> 
@@ -44,35 +40,26 @@ const IndexPage = ({ data }) => {
   )
 }
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
-
 export default IndexPage
 
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "home" } }) {
+  query IndexPageTemplate($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
-        title
-        image {
+        siteTitle
+        headerImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
+          publicURL
         }
-        heading
-        mainpitch {
-          title
-          description
-        }
+        headline
+        subheadline
       }
+      html
     }
   }
 `

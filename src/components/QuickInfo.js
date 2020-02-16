@@ -15,7 +15,7 @@ const QuickInfo = () => {
                                 <div className="media">
                                     <div className="mr-3 icon-wrap"><span className="fa fa-phone"></span></div>
                                     <div className="media-body">
-                                        <h5>09143-6518</h5>
+                                        <h5><a href="tel:09143 6518">09143 6518</a></h5>
                                         <p>Für nähere Informationen rufen Sie uns gerne direkt an.</p>
                                     </div>
                                 </div>

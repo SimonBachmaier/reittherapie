@@ -1,6 +1,7 @@
 ---
 templateKey: about
 siteTitle: Über mich
+headerImage: /img/header-image.jpg
 image: /img/horse-headshot.jpg
 headline: In sicheren Händen
 subheadline: Mensch und Tier in Harmonie

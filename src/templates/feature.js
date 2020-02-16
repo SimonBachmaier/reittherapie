@@ -10,7 +10,7 @@ import SiteSection from '../components/SiteSection';
 const About = ({data}) => {
   let md = data.markdownRemark;
   return (
-    <Layout headerText={md.frontmatter.siteTitle}>
+    <Layout headerText={md.frontmatter.siteTitle} headerImage={md.frontmatter.headerImage.childImageSharp} siteTitle={md.frontmatter.name}>
       <SiteSection>
         <TextImage className="pt-5"
           fluidImage={md.frontmatter.image.childImageSharp.fluid}
@@ -33,12 +33,20 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         siteTitle
+        headerImage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+          publicURL
+        }
         name
         description
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }

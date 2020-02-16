@@ -9,13 +9,13 @@ import { Location } from '@reach/router';
 
 const NavLink = (props) => {
     return (
-        <li className="nav-item">
+        <div className="nav-item">
             { props.external ? (
                 <a className="nav-link" href={props.to}>{props.label}</a>
             ) : (
                 <Link className="nav-link" activeClassName="active" to={props.to}>{props.label}</Link>
             )}
-        </li>
+        </div>
     )
 };
 const NavDropdownLink = (props) => {
