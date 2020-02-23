@@ -1,10 +1,12 @@
 ---
 templateKey: feature
-siteTitle: Pädagogoschische Förderung
+siteTitle: Pädagogische Förderung
 headerImage: /img/header-image.jpg
-image: /img/horse-headshot.jpg
 name: Pädagogoschische Förderung
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda rem nulla odio iure animi repellat voluptates ullam omnis enim?
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda
+  rem nulla odio iure animi repellat voluptates ullam omnis enim?
+image: /img/horse-headshot.jpg
 headline: In sicheren Händen
 subheadline: Mensch und Tier in Harmonie
 textNextToImage: >-
