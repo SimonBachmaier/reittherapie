@@ -3,13 +3,9 @@ templateKey: horse
 siteTitle: Unsere Therapiepferde
 headerImage: /img/1Alle Pferde.jpg
 name: Missy
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+description: ' Quarter-Isländer-Stute, geboren 2002, Stockmaß: 1,40 m '
 image: /img/Pferd Missy.jpg
-headline: In sicheren Händen
-subheadline: Mensch und Tier in Harmonie
+headline: Die Leitstute
+subheadline: ... selbstbewusst und menschenbezogen
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facere a excepturi quod impedit rerum ipsum totam incidunt, necessitatibus id veritatis maiores quos saepe dolore commodi magnam fugiat. Incidunt, omnis.
-
-
-
-Nobis quae eaque facere architecto eligendi, voluptas quasi, blanditiis aperiam possimus inventore quis nam! Cupiditate necessitatibus, voluptatem excepturi placeat exercitationem quos vitae ut vero dolorem, provident sit odio porro facere.
+Missy, unsere selbstbewusste Leitstute ist sehr menschenbezogen und liebt es viel gekrault und gebürstet zu werden. Mit ihrem wunderschönen Schaukelgalopp lädt sie ein, das Galoppieren zu erlernen und zu geniessen. Sie reagiert in der Bodernarbeit auf feinste Signale.
