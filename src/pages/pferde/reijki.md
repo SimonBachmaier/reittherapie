@@ -5,7 +5,7 @@ headerImage: /img/1Alle Pferde.jpg
 name: Epoona
 description: .
 image: /img/1Pferd Epona.jpg
-headline: neben bild
-subheadline: unter neben bild
+headline: .
+subheadline: .
 ---
-Blabal
+.
