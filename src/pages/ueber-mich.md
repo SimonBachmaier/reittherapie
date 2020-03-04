@@ -2,7 +2,7 @@
 templateKey: about
 siteTitle: Über mich
 headerImage: /img/001.jpg
-image: /img/horse-headshot.jpg
+image: /img/Petra Porträt.jpg
 headline: In sicheren Händen
 subheadline: Mensch und Tier in Harmonie
 textNextToImage: >-
