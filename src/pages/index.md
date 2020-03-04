@@ -1,7 +1,7 @@
 ---
 templateKey: home
 siteTitle: Reittherapie im Altmühltal
-headerImage: /img/header-image.jpg
+headerImage: /img/001.jpg
 headline: Reittherapie für ein gesünderes Leben
 subheadline: Mensch und Tier in Harmonie
 ---
