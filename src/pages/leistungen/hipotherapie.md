@@ -1,8 +1,8 @@
 ---
 templateKey: feature
-siteTitle: Pferdegestützte Therapie
+siteTitle: Pferdegestützte Therapie und Pädagogik
 headerImage: /img/001.jpg
-name: Pferdegestützte Therapie
+name: Pferdegestützte Therapie und Pädagogik
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda
   rem nulla odio iure animi repellat voluptates ullam omnis enim?
