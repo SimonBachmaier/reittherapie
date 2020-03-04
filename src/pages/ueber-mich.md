@@ -4,11 +4,8 @@ siteTitle: Über mich
 headerImage: /img/001.jpg
 image: /img/Petra Porträt.jpg
 headline: In sicheren Händen
-subheadline: Mensch und Tier in Harmonie
+subheadline: Petra Bachmaier
 textNextToImage: >-
-  **Petra Bachmaier**
-
-
   Reittherapeutin – Hippopädagogin®
 
 
