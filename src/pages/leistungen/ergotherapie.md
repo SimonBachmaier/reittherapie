@@ -1,8 +1,8 @@
 ---
 templateKey: feature
-siteTitle: Reittherapie - Therapeutisches Reiten
+siteTitle: Hippopädagogik®
 headerImage: /img/001.jpg
-name: Reittherapie - Therapeutisches Reiten
+name: Hippopädagogik®
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda
   rem nulla odio iure animi repellat voluptates ullam omnis enim?
