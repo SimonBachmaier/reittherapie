@@ -8,4 +8,4 @@ image: /img/1Pferd Epona.jpg
 headline: Unser Barbiepferd
 subheadline: ... steht über den Dingen
 ---
-Epona unsere Schöne und Sensible wird nun aus gesundheitlichen Gründen nicht mehr geritten. Sie freut sich aber über Bodenarbeit, leichtes longieren und natürlich darüber Aufmerksamkeit zu bekommen, gestreichelt und gebürstet zu werden.
+Epona unsere Schöne und Sensible wird nun aus gesundheitlichen Gründen nicht mehr geritten. Sie freut sich aber über Bodenarbeit, leichtes Longieren und natürlich darüber Aufmerksamkeit zu bekommen, gestreichelt und gebürstet zu werden.
