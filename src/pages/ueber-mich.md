@@ -24,8 +24,6 @@ textNextToImage: >-
   Deutscher Reitpass
 
 
-
-
   Langjährige Erfahrung in der Reittherapie,
 
 
