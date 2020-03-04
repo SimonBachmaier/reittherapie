@@ -2,7 +2,7 @@
 templateKey: feature
 siteTitle: Unsere tolle Pädagogische Förderung
 headerImage: /img/header-image.jpg
-name: Pädagoschische Förderung
+name: Pädagogischische Förderung
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda
   rem nulla odio iure animi repellat voluptates ullam omnis enim?
