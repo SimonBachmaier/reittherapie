@@ -3,8 +3,6 @@ templateKey: home
 siteTitle: Reittherapie im Altmühltal
 headerImage: /img/001.jpg
 headline: Herzlich Willkommen auf dem Therapiehof Bachmaier!
-subheadline: Mensch und Tier in Harmonie
+subheadline: Pferde stärken für das Leben
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facere a excepturi quod impedit rerum ipsum totam incidunt, necessitatibus id veritatis maiores quos saepe dolore commodi magnam fugiat. Incidunt, omnis.
-
-Nobis quae eaque facere architecto eligendi, voluptas quasi, blanditiis aperiam possimus inventore quis nam! Cupiditate necessitatibus, voluptatem excepturi placeat exercitationem quos vitae ut vero dolorem, provident sit odio porro facere.
+In ländlicher Idylle des kleinen Ortes Göhren bei Pappenheim, im schönen Naturpark Althmühltal umgeben von Wiesen, Feldern und Wäldern, befindet sich seit 2016 unser Reittherapiehof, mit seinen Pferden.
