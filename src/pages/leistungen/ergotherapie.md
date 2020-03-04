@@ -4,7 +4,7 @@ siteTitle: Hippopädagogik®
 headerImage: /img/001.jpg
 name: Hippopädagogik®
 description: .
-image: /img/horse-headshot.jpg
+image: /img/Hippopädagogik.jpg
 headline: In sicheren Händen
 subheadline: Was ist Hippopädagogik®
 textNextToImage: >-
