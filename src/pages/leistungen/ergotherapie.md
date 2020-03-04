@@ -1,10 +1,12 @@
 ---
 templateKey: feature
-siteTitle: Ergotherapie
-headerImage: /img/header-image.jpg
+siteTitle: Reittherapie - Therapeutisches Reiten
+headerImage: /img/001.jpg
+name: Reittherapie - Therapeutisches Reiten
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda
+  rem nulla odio iure animi repellat voluptates ullam omnis enim?
 image: /img/horse-headshot.jpg
-name: Ergotherapie
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda rem nulla odio iure animi repellat voluptates ullam omnis enim?
 headline: In sicheren Händen
 subheadline: Mensch und Tier in Harmonie
 textNextToImage: >-
