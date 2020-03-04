@@ -1,10 +1,10 @@
 ---
 templateKey: horse
 siteTitle: Unsere Therapiepferde
-headerImage: /img/header-image.jpg
-name: Missy
+headerImage: /img/1Alle Pferde.jpg
+name: Epoona
 description: .
-image: /img/horse-headshot.jpg
+image: /img/1Pferd Epona.jpg
 headline: neben bild
 subheadline: unter neben bild
 ---
