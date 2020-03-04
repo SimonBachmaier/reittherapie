@@ -6,6 +6,6 @@ name: Duna
 description: ' Islandpferdestute, geboren 1991 und  1,34 m groß'
 image: /img/Pferd Duna.jpg
 headline: Unser mütterliches Therapiepferd
-subheadline: .
+subheadline: ... gutmütig und erfahren!
 ---
 .
