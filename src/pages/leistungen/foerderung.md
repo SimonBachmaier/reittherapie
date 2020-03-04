@@ -1,8 +1,8 @@
 ---
 templateKey: feature
-siteTitle: Unsere tolle Pädagogische Förderung
+siteTitle: Sensorische Integration
 headerImage: /img/header-image.jpg
-name: Pädagogischische Förderung
+name: Sensorische Integration
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda
   rem nulla odio iure animi repellat voluptates ullam omnis enim?
