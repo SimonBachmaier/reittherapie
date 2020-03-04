@@ -3,7 +3,7 @@ templateKey: horse
 siteTitle: Unsere Therapiepferde
 headerImage: /img/1Alle Pferde.jpg
 name: Reijki
-description: ' Islandpferdestute, geboren 1991 und  1,34 m groß'
+description: .
 image: /img/Pferd Reijki.jpg
 headline: Unser mütterliches Therapiepferd
 subheadline: ... gutmütig und erfahren!
