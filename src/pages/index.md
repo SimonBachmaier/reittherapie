@@ -2,7 +2,7 @@
 templateKey: home
 siteTitle: Reittherapie im Altmühltal
 headerImage: /img/001.jpg
-headline: Reittherapie für ein gesünderes Leben
+headline: Herzlich Willkommen auf dem Therapiehof Bachmaier!
 subheadline: Mensch und Tier in Harmonie
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facere a excepturi quod impedit rerum ipsum totam incidunt, necessitatibus id veritatis maiores quos saepe dolore commodi magnam fugiat. Incidunt, omnis.
