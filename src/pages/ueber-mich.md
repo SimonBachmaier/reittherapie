@@ -1,7 +1,7 @@
 ---
 templateKey: about
 siteTitle: Über mich
-headerImage: /img/001.jpg
+headerImage: /img/002.jpg
 image: /img/Petra Porträt.jpg
 headline: In sicheren Händen
 subheadline: Petra Bachmaier
