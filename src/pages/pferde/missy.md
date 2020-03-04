@@ -2,8 +2,8 @@
 templateKey: horse
 siteTitle: Unsere Therapiepferde
 headerImage: /img/header-image.jpg
+name: Einstein
 description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-name: Missy
 image: /img/horse-headshot.jpg
 headline: In sicheren Händen
 subheadline: Mensch und Tier in Harmonie
