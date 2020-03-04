@@ -1,7 +1,7 @@
 ---
 templateKey: feature
 siteTitle: Sensorische Integration
-headerImage: /img/header-image.jpg
+headerImage: /img/001.jpg
 name: Sensorische Integration
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda
