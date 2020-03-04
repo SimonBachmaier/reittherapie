@@ -1,10 +1,12 @@
 ---
 templateKey: feature
-siteTitle: Reittherapie
-headerImage: /img/header-image.jpg
+siteTitle: Psychomotorik und Motopädagogik
+headerImage: /img/001.jpg
+name: Psychomotorik und Motopädagogik
+description: >-
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda
+  rem nulla odio iure animi repellat voluptates ullam omnis enim?
 image: /img/horse-headshot.jpg
-name: Reittherapie
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, assumenda rem nulla odio iure animi repellat voluptates ullam omnis enim?
 headline: In sicheren Händen
 subheadline: Mensch und Tier in Harmonie
 textNextToImage: >-
