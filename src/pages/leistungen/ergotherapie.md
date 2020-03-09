@@ -26,7 +26,7 @@ textNextToImage: >-
 ---
 Oberstes Ziel der Hippopädagogik® ist die **„Umfassende Handlungsfähigkeit im Kontakt mit dem Pferd “** um die dort gemachten Erfahrungen den eigenen Möglichkeiten entsprechend auf andere Lebensbereiche und Lebenssituationen zu übertragen, also eine möglichst **umfassende Handlungskompetenz im Alltag** erreichen zu können. 
 
-Um dieses Ziel erreichen zu können finden in den hippopädagogischen Interventionen, die **sechs Prinzipien der Hippopädagogik®** ihre Anwendung, diese sind im folgenden: 
+Um dieses Ziel erreichen zu können finden in den hippopädagogischen Interventionen, die **sechs Prinzipien der Hippopädagogik®** ihre Anwendung:
 
 das Prinzip der Selbstbestimmung und Selbsttätigkeit, 
 
