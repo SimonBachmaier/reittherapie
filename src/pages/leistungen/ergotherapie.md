@@ -8,18 +8,25 @@ image: /img/Hippopädagogik.jpg
 headline: In sicheren Händen
 subheadline: Was ist Hippopädagogik®
 textNextToImage: >-
-  Hippopädagogik® ist eine weitere Form des therapeutischen und
-  heilpädagogischen Reitens, die sich das handlungs- und bewegungsorinterte
-  Konzept der Psychomotorik/Motopädagogik zu eigen macht. Das Pferd ist hierfür
-  durch seine Größe ein ideales, lebendiges Bewegungsmedium, das uns auch
-  emotional sehr stark anspricht. Es bewegt unser Inneres und Äußeres, also
-  psychisch und physisch. Sie unterstützt eine ganzheitliche, Persönlichkeits-
-  und Entwicklungsförderung für Kinder, Jugendliche und Erwachsene mit und ohne
+  **Hippopädagogik®** ist eine weitere Form des therapeutischen und
+  heilpädagogischen Reitens, die sich das **handlungs- und bewegungsorinterte
+  Konzept der Psychomotorik/Motopädagogik** zu eigen macht. 
+
+
+  Das Pferd ist hierfür durch seine Größe ein ideales, lebendiges
+  Bewegungsmedium, das uns auch emotional sehr stark anspricht. 
+
+
+  Es bewegt unser Inneres und Äußeres, also psychisch und physisch. 
+
+
+  **Hippopädagogik** unterstützt eine **ganzheitliche, Persönlichkeits- und
+  Entwicklungsförderung** für Kinder, Jugendliche und Erwachsene mit und ohne
   Behinderung.
 ---
-Oberstes Ziel der Hippopädagogik® ist die „Umfassende Handlungsfähigkeit im Kontakt mit dem Pferd “ um die dort gemachten Erfahrungen den eigenen Möglichkeiten entsprechend auf andere Lebensbereiche und Lebenssituationen zu übertragen, also eine möglichst umfassende Handlungskompetenz im Alltag erreichen zu können. 
+Oberstes Ziel der Hippopädagogik® ist die **„Umfassende Handlungsfähigkeit im Kontakt mit dem Pferd “** um die dort gemachten Erfahrungen den eigenen Möglichkeiten entsprechend auf andere Lebensbereiche und Lebenssituationen zu übertragen, also eine möglichst **umfassende Handlungskompetenz im Alltag** erreichen zu können. 
 
-Um dieses Ziel erreichen zu können finden in den hippopädagogischen Interventionen, die sechs Prinzipien der Hippopädagogik® ihre Anwendung, das sind im folgenden: 
+Um dieses Ziel erreichen zu können finden in den hippopädagogischen Interventionen, die **sechs Prinzipien der Hippopädagogik®** ihre Anwendung, diese sind im folgenden: 
 
 das Prinzip der Selbstbestimmung und Selbsttätigkeit, 
 
@@ -35,8 +42,8 @@ und der Wechsel zwischen Anspannung und Entspannung.
 
 
 
-Diese sechs Prinzipien unterstützen die ganzheitliche Förderung in den vier Bereichen: 
+Diese **sechs Prinzipien unterstützen die ganzheitliche Förderung** in den vier Bereichen: 
 
-motorisch, emotional, sozial und kognitiv 
+**motorisch, emotional, sozial und kognitiv** 
 
 während einer hippopädagogischen Intervention.
