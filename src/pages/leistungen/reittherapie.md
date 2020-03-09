@@ -5,8 +5,8 @@ headerImage: /img/001.jpg
 name: Psychomotorik und Motopädagogik
 description: .
 image: /img/Tonne Aktion.jpg
-headline: In sicheren Händen
-subheadline: Mensch und Tier in Harmonie
+headline: Was sind Psychomotorik - Motopädagogik
+subheadline: Physisches und psychisches bewegt werden
 textNextToImage: .
 ---
 .
