@@ -5,8 +5,8 @@ headerImage: /img/001.jpg
 name: Sensorische Integration
 description: .
 image: /img/Epoona.jpg
-headline: In sicheren Händen
-subheadline: Mensch und Tier in Harmonie
+headline: Was ist sensorische Integrationstherapie
+subheadline: Reiz und Reaktion
 textNextToImage: .
 ---
 .
