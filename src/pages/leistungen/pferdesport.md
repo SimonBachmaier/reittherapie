@@ -5,8 +5,8 @@ headerImage: /img/001.jpg
 name: Erlebnispädagogik
 description: .
 image: /img/Katze Inzie.jpg
-headline: In sicheren Händen
-subheadline: Mensch und Tier in Harmonie
+headline: Was ist Erlebnispädagogik mit dem Pferd
+subheadline: Grenzen überwinden - Freiheit
 textNextToImage: .
 ---
 .
