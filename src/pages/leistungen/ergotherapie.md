@@ -5,8 +5,8 @@ headerImage: /img/001.jpg
 name: Hippopädagogik®
 description: .
 image: /img/Hippopädagogik.jpg
-headline: In sicheren Händen
-subheadline: Was ist Hippopädagogik®
+headline: Was ist Hippopädagogik®
+subheadline: Freude an Bewegung
 textNextToImage: >-
   **Hippopädagogik®** ist eine weitere Form des therapeutischen und
   heilpädagogischen Reitens, die sich das **handlungs- und bewegungsorinterte
