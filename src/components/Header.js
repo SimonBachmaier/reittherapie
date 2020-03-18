@@ -62,7 +62,7 @@ const Header = () => {
                                     return (
                                         <React.Fragment>
                                             <NavLink to="/" label="Home" />
-                                            <NavDropdown title="Leistungen" id="nav-dropdown" active={location.pathname.indexOf('/leistungen/') > -1}>
+                                            <NavDropdown title="Therapien" id="nav-dropdown" active={location.pathname.indexOf('/leistungen/') > -1}>
                                                 {data.allMarkdownRemark.edges.map((item, index)=> {
                                                     if (item.node.fields.slug.indexOf('/leistungen/')  > -1){
                                                         return (

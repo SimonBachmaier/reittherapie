@@ -35,7 +35,7 @@ export default (props) => {
         <Row className={props.className}>
             <Col md="4" className="pr-5">
                 <h2 className="mb-3">Unsere Therapiepferde</h2>
-                <p className="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facere a excepturi quod impedit rerum ipsum totam incidunt, necessitatibus id veritatis maiores quos saepe dolore commodi magnam fugiat. Incidunt, omnis.</p>
+                <p className="mb-5">Unsere Therapiepferde haben ein ausgeglichenes und ruhiges Wesen, da sie artgerecht und zufrieden in einem großen Offenstall mit ständigem Zugang zu Heu und sehr großer Koppel in einer Herde mit 7 Pferden leben.</p>
                 
                 <div className="mb-3 custom-nav">
                 {props.noButtons ? (
@@ -71,7 +71,7 @@ export default (props) => {
                         }}>
                             {data.allMarkdownRemark.edges.map((item, index) => {
                                 if (props.current === item.node.fields.slug) {
-                                    return '';
+                                    return null;
                                 }
                                 return(
                                     <div key={index}>

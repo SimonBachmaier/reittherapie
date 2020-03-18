@@ -2,6 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Img from 'gatsby-image';
+import * as marked from 'marked';
 
 export default (props) => {
 let className = props.className ? props.className : '';
@@ -16,7 +17,7 @@ let className = props.className ? props.className : '';
                 {props.headline ? <h3>{props.headline}</h3> : ''}
                 {props.subheadline ? <p className="lead">{props.subheadline}</p> : ''}
                 {props.children}
-                <div dangerouslySetInnerHTML={{ __html: props.html }}></div>
+                <div dangerouslySetInnerHTML={{ __html: marked(props.html) }}></div>
             </Col>
         </Row>
     )

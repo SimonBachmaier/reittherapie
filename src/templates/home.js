@@ -28,9 +28,16 @@ const IndexPage = ({ data }) => {
       
       <SiteSection>
         <Text centered={true}
-              subheadline="Arbeit am Pferd"
+              subheadline="Unser Therapieangebot"
           >
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum magnam illum maiores adipisci pariatur, eveniet.</p>
+              <p>
+                Aufgrund meiner vielfältigen Ausbildungen kann ich verschiedene  Therapien und pädagogische Interventionen anbieten und anwenden.<br/>
+                <br/>
+                Bei einem Vorgespräch werden die passendsten Methoden individuell für Sie, Ihr Kind oder ihre Gruppe ermittelt. Wir erarbeiten daraufhin einen flexiblen Therapieplan für Sie, den wir je nach Fortschritt und Bedarf anpassen, um Sie zielgerichtet zu unterstützen.<br/>
+                <br/>
+                Wir arbeiten auch interdisziplinär mit anderen Therapeuten, wie Heilpädagogen, Physiotherapeuten, Ergotherapeuten, Logopäden und Psychologen zusammen.<br/>
+                <br/>
+                Begleitende Elterngespräche und der Austausch mit Erziehern und pädagogischen Begleitpersonen sind auch wichtige Aspekte unserer therapeutischen und heilpädagogischen Arbeit.</p>
           </Text>
 
           <FeaturesSection />

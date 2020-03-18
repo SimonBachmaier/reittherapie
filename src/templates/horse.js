@@ -27,7 +27,7 @@ const Pferd = ({data}) => {
         /> 
       </SiteSection>
       <SiteSection>
-        <HorseCarousel className="" current={md.fields.slug} noButtons={true} />
+        <HorseCarousel className="" current={md.fields.slug} />
       </SiteSection>
       
     </Layout>

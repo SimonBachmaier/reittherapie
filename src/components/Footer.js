@@ -11,7 +11,7 @@ const Footer = () => {
                 <Row className="mb-5">
                     <Col md="4">
                         <h3 className="mb-4">Kontakt</h3>
-                        <p className="mb-4">Reittherapie Göhren mit Petra Bachmaier:<br />Professionelle Begleitung für Ihr Kind und Sie.</p>
+                        <p className="mb-4">Reittherapie Göhren mit Petra Bachmaier:<br />Professionelle Begleitung in allen Lebenslagen.</p>
                         <ul className="list-unstyled ">
                         <li className="d-flex"><span className="mr-3"><span className="fa fa-map-marker"></span></span><span className="">Göhren 14, 91788 Pappenheim</span></li>
                         <li className="d-flex"><span className="mr-3"><span className="fa fa-phone"></span></span><span className=""><a href="tel:09143 6518">09143 6518</a></span></li>
