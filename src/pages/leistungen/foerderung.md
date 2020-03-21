@@ -4,7 +4,7 @@ siteTitle: Sensorische Integration
 headerImage: /img/001.jpg
 name: Sensorische Integration
 description: .
-image: /img/Epoona.jpg
+image: /img/CIMG0663.jpg
 headline: Was ist sensorische Integrationstherapie
 subheadline: Reiz und Reaktion
 textNextToImage: >-
