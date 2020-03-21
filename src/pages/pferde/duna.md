@@ -14,4 +14,4 @@ Durch sein absolut ausgeglichenes und ruhiges Wesen hat er viele Fans.
 
  Reijki ist ein Alrounder! 
 
-Er ist ein tolles Therapiepferd, Reit- und Kutschpferd, sehr fein in der Bodenarbeit und lädt ein auf ihm entspannt zu Turnen und zu Voltigieren.
+Er ist ein tolles Therapiepferd, Reit- und Kutschpferd, sehr fein in der Bodenarbeit und lädt ein, auf ihm entspannt zu Turnen und zu Voltigieren.
