@@ -4,13 +4,13 @@ siteTitle: Hippopädagogik®
 headerImage: /img/001.jpg
 name: Hippopädagogik®
 description: .
-image: /img/Hippopädagogik.jpg
+image: /img/Tonne Aktion.jpg
 headline: Was ist Hippopädagogik®
 subheadline: Freude an Bewegung
 textNextToImage: >-
   **Hippopädagogik®** ist eine weitere Form des therapeutischen und
   heilpädagogischen Reitens, die sich das **handlungs- und bewegungsorinterte
-  Konzept der Psychomotorik/Motopädagogik** zu eigen macht. 
+  Konzept der Psychomotorik** zu eigen macht. 
 
 
   Das Pferd ist hierfür durch seine Größe ein ideales, lebendiges
@@ -20,9 +20,9 @@ textNextToImage: >-
   Es bewegt unser Inneres und Äußeres, also psychisch und physisch. 
 
 
-  **Hippopädagogik** unterstützt eine **ganzheitliche, Persönlichkeits- und
-  Entwicklungsförderung** für Kinder, Jugendliche und Erwachsene mit und ohne
-  Behinderung.
+  **Hippopädagogik** ist eine **ganzheitliche
+  Persönlichkeitsentwicklungsförderung** **für Kinder, Jugendliche und
+  Erwachsene mit und ohne Behinderung.**
 ---
 Oberstes Ziel der Hippopädagogik® ist die **„Umfassende Handlungsfähigkeit im Kontakt mit dem Pferd “** um die dort gemachten Erfahrungen den eigenen Möglichkeiten entsprechend auf andere Lebensbereiche und Lebenssituationen zu übertragen, also eine möglichst **umfassende Handlungskompetenz im Alltag** erreichen zu können. 
 
