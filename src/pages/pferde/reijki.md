@@ -2,8 +2,8 @@
 templateKey: horse
 siteTitle: Unsere Therapiepferde
 headerImage: /img/1Alle Pferde.jpg
-name: Epoona
-description: 'Araberstute, geboren 1995, Stockmaß: 1,52 m'
+name: Epona
+description: 'Araberstute, geboren 1995 und 1,52 m groß'
 image: /img/1Pferd Epona.jpg
 headline: Unsere Schöne
 subheadline: ... steht über den Dingen
