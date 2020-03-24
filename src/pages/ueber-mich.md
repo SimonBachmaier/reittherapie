@@ -2,7 +2,7 @@
 templateKey: about
 siteTitle: Über mich
 headerImage: /img/0002.jpg
-image: /img/Petra Porträt.jpg
+image: /img/1Petra neu.jpg
 headline: In sicheren Händen
 subheadline: Petra Bachmaier
 textNextToImage: >-
@@ -46,7 +46,11 @@ Drei Jahre **unter ärztlicher Aufsicht angeleitet und ausgebildet** in Klangsch
 
 Im Rahmen meiner Ausbildung zur **Psychomotorikerin/Motopädagogin** und **Hippopädagogin** absolvierte ich Praktikas in einer Klinik für Psychiatrie und Psychotherapie in bewegungs- und tanztherapeutischen Gruppen und auf einem Reittherapiehof. 
 
-Nach den bestandenen Prüfungen folgten viele Jahre der praktischen Arbeit/Erfahrung in der Reitherapie und dem heilpädagogischen Reiten, bis 2016 mein großer Herzenswunsch in Erfüllung gehen konnte und ich nun in **Selbständigkeit auf dem eigenen Hof** mit den **eigenen Therapiepferden** meine Erfahrungen und meine Hilfe den Menschen zur Verfügung stellen kann.
+Nach den bestandenen Prüfungen folgten viele Jahre der praktischen Arbeit/Erfahrung in der Reitherapie und dem heilpädagogischen Reiten, in verschiedenen Einrichtungen.
+
+Auch die **Leitung** **des Bereiches der Pferdetherapie und Pädagogik einer Tagesstätte**, die einer Schule für Kinder und Jugendliche mit multiblen Beeinträchtigungen angehört, mehreren Reittherapeuten und die Zusammenarbeit mit einem interdisziplinärem Therapeutenteam (Logo, Ergo, Physio, Heilpädagogen und Psychologen) gaben mir sehr viele Einblicke und Erkenntnisse.
+
+2016 ging mein großer Herzenswunsch in Erfüllung und ich kann nun in **Selbständigkeit auf dem eigenen Hof** mit den **eigenen Therapiepferden** meine Erfahrungen und meine Hilfe den Menschen zur Verfügung stellen kann.
 
 
 
