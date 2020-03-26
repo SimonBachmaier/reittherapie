@@ -21,10 +21,6 @@ const IndexPage = ({ data }) => {
           html={md.html}
          /> 
       </SiteSection>
-
-      <SiteSection> 
-        <HorseCarousel className="" />
-      </SiteSection>
       
       <SiteSection>
         <Text centered={true}
@@ -41,6 +37,10 @@ const IndexPage = ({ data }) => {
           </Text>
 
           <FeaturesSection />
+      </SiteSection>
+
+      <SiteSection>
+        <HorseCarousel className="" />
       </SiteSection>
     
     </Layout>
