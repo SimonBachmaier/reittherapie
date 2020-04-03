@@ -2,10 +2,10 @@
 templateKey: feature
 siteTitle: Psychomotorik und Motopädagogik
 headerImage: /img/001.jpg
-name: Psychomotorik und Motopädagogik
+name: 'Psychomotorik '
 description: .
 image: /img/Tonne Aktion.jpg
-headline: Was sind Psychomotorik - Motopädagogik
+headline: 'Was ist Psychomotorik? '
 subheadline: Physisches und psychisches bewegt werden
 textNextToImage: .
 ---
