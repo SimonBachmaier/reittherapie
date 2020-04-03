@@ -26,4 +26,4 @@ Therapie und Pädagogik mit Pferden ist eine Therapieform, welche das Pferd mit 
 
 \- die eigene Handlungskompetenz zu stärken;
 
-\- um gestärkt, ein selbstbestimmtes und glücklicheres Leben führen zu können.
+um gestärkt, ein selbstbestimmtes und glücklicheres Leben führen zu können.
