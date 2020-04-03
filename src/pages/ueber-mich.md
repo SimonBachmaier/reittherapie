@@ -19,38 +19,35 @@ textNextToImage: >-
   **Deutscher Reitpass**
 
 
-  **Langjährige Erfahrung** in der Reittherapie, mit Kindern, Jugendlichen und
+  **Langjährige Erfahrung in der Reittherapie**, mit Kindern, Jugendlichen und
   Erwachsenen, mit Förderbedarf, sowie mit psychischen, körperlichen und
   geistigen Belastungen und Behinderungen, in verschiedenen Einrichtungen, als
   auch in Selbständigkeit auf dem eigenen Hof. 
 
 
   Ich bin mein Leben lang immer sehr dankbar gewesen, auf dem Weg mit den
-  Pferden eine so große Erfüllung finden zu dürfen und erblühe, wenn ich in der
-  Reittherapie Menschen mit Hilfe des Pferdes ein Stück des Heilwerdens seelisch
-  und körperlich und die Stärkung ihrer Persönlichkeit begleiten darf.
+  Pferden eine so große Erfüllung finden zu dürfen. 
+
+
+  Sehr glücklich bin ich, wenn ich in der Reittherapie Menschen mit Hilfe der
+  Pferde ein Stück des Heilwerdens seelisch und körperlich und die Stärkung
+  ihrer Persönlichkeit begleiten darf.
 ---
 **Ich bin 1964 geboren, verheiratet und Mutter von 4 erwachsenen Kindern.**
 
 Die Zeiten der Kindererziehung und des Familienmanagements als Frau und Mutter haben meinen Erfahrungsreichtum für meine pädagogische und therapeutische Arbeit immens bereichert.
 
-
-
 Nach meiner Ausbildung zur **staatlich anerkannten Erzieherin** 1984 arbeitete ich viele Jahre als Gruppenleiterin und Praktikantenanleiterin im Kindergarten und in der Tagesstätte einer Sonderschule für Kinder und Jugendliche mit geistigen, psychischen und körperlichen Beeinträchtigungen.
 
+Drei Jahre **unter ärztlicher Aufsicht angeleitet und ausgebildet** in Klangschalenmassage, Reflexzonenfußmassage Japanischem Heilströmen und Ayurveda-Anwendungen, konnte ich Erfahrungen in der selbständigen Anwendung bei Menschen mit seelischen Belastungen (Deppressionen, seelischen Erschöpfungszuständen...) und körperlichen Belastungen ( Multiples Sklerose, Krebs...) machen.
 
-
-Drei Jahre **unter ärztlicher Aufsicht angeleitet und ausgebildet** in Klangschalenmassage, Reflexzonenfußmassage Japanischem Heilströmen und Ayurveda-Anwendungen, konnte ich Erfahrungen in der selbständigen Anwendung bei Menschen mit seelischen (wie, Deppressionen, seelischen Erschöpfungszuständen) und körperlichen Belastungen (wie Multiples Sklerose, Krebs) machen.
-
-
-
-Im Rahmen meiner Ausbildung zur **Psychomotorikerin/Motopädagogin** und **Hippopädagogin** absolvierte ich Praktikas in einer Klinik für Psychiatrie und Psychotherapie in bewegungs- und tanztherapeutischen Gruppen und auf einem Reittherapiehof. 
+Im Rahmen meiner Ausbildung zur **Psychomotorikerin/Motopädagogin** und **Hippopädagogin** (Reittherapie) absolvierte ich Praktikas in einer Klinik für Psychiatrie und Psychotherapie in bewegungs- und tanztherapeutischen Gruppen und auf einem Reittherapiehof. 
 
 Nach den bestandenen Prüfungen folgten viele Jahre der praktischen Arbeit/Erfahrung in der Reitherapie und dem heilpädagogischen Reiten, in verschiedenen Einrichtungen.
 
-Auch die **Leitung** **des Bereiches der Pferdetherapie und Pädagogik einer Tagesstätte**, die einer Schule für Kinder und Jugendliche mit multiblen Beeinträchtigungen angehört, mehreren Reittherapeuten und die Zusammenarbeit mit einem interdisziplinärem Therapeutenteam (Logo, Ergo, Physio, Heilpädagogen und Psychologen) gaben mir sehr viele Einblicke und Erkenntnisse.
+Auch die **Leitung** **des Bereiches der Therapie mit den Pferden einer heilpädagogischen Tagesstätte**, die einer Schule für Kinder und Jugendliche mit multiblen Beeinträchtigungen (körperlich, geistig, psychisch) angehört, mit  mehreren Reittherapeuten und die Zusammenarbeit mit einem interdisziplinärem Therapeutenteam (Logo, Ergo, Physio, Heilpädagogin und Psychologen) gaben mir wertvolle Einblicke und Erkenntnisse.
 
-2016 ging mein großer Herzenswunsch in Erfüllung und ich kann nun in **Selbständigkeit auf dem eigenen Hof** mit den **eigenen Therapiepferden** meine Erfahrungen und meine Hilfe den Menschen zur Verfügung stellen kann.
+2016 ging mein großer Herzenswunsch in Erfüllung und ich kann nun in **Selbständigkeit auf dem eigenen Hof** mit den **eigenen Therapiepferden** meine Erfahrungen und meine Hilfe den Menschen zur Verfügung stellen.
 
 
 
