@@ -16,7 +16,11 @@ const Layout = (props) => {
           {
             name: "description",
             content:description
-          }
+          },
+          {
+            name: "google-site-verification",
+            content:"vgZlgTm2NuN1fakd9qOYCDo5Pz9jnc9Wppq992QdVC8"
+          },
         ]}
         htmlAttributes={{lang: "de"}}
       >
