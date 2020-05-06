@@ -35,7 +35,7 @@ const HeroImage = (props) => {
                         </Container>
                     </section>
                 ) : (
-                    <section style={{ padding: '150px', background: 'grey' }}>
+                    <section className="site-hero-no-image">
                         <Container>
                                 <Row className="align-items-center site-hero-inner justify-content-center">
                                     <Col md="8" className="text-center">

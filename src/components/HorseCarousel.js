@@ -70,9 +70,6 @@ export default (props) => {
                             }
                         }}>
                             {data.allMarkdownRemark.edges.map((item, index) => {
-                                if (props.current === item.node.fields.slug) {
-                                    return null;
-                                }
                                 return(
                                     <div key={index}>
                                         <Link to={item.node.fields.slug} className="img-bg" style={{'backgroundImage': "url('" + item.node.frontmatter.image.childImageSharp.fluid.src + "')"}}>

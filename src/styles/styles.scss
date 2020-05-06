@@ -1,6 +1,20 @@
 .site-title-fancy {
     font-family: 'tahuregular'; 
 }
+.site-hero.overlay h1 {
+    font-size: 37px;
+}
+.site-hero-no-image h1 {
+    font-size: 33px;
+}
+.site-hero.overlay h1.site-title-fancy {
+    font-size: 70px;
+}
+
+.site-hero-no-image {
+    padding: 170px 0 90px 0;
+    background-color: grey;
+}
 
 .alice-carousel {
     li > div {
@@ -20,6 +34,9 @@ a.media.media-feature {
 }
 
 @media screen and (min-width: 575px) {
+    .site-hero.overlay h1, .site-hero-no-image h1 {
+        font-size: 50px;
+    }
     .site-title-fancy {
         font-size: 104px !important;
     }
@@ -27,6 +44,13 @@ a.media.media-feature {
         padding: 0 16px;
     }
 }
+
+@media screen and (min-width: 720px) {
+    .site-hero.overlay h1 {
+        font-size: 70px;
+    }
+}
+
 
 @media screen and (max-width: 575px) {
     .quick-info .media {
