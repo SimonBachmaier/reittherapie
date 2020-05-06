@@ -1,12 +1,15 @@
 var proxy = require('http-proxy-middleware')
 
 module.exports = {
+  plugins: [`gatsby-plugin-sitemap`],
   siteMetadata: {
+    siteUrl: 'https://reittherapie-bachmaier.de',
     title: 'Reittherapie Bachmaier',
     description:
       'Reittherapie im Altmühltal mit Petra Bachmaier. Geschult in den Bereichen Reittherapie, Ergotherapie und mehr führe ich Sie oder Ihr Kind als gelernte Erzieherin mit meinen Therapiepferden hin zu einem ausgeglicheneren Leben.',
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
