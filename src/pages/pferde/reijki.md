@@ -1,15 +1,17 @@
 ---
 templateKey: horse
 siteTitle: Unsere Therapiepferde
-headerImage: /img/1Alle Pferde.jpg
-name: Epona
-description: 'Araberstute, geboren 1995 und 1,52 m groß'
-image: /img/1Pferd Epona.jpg
-headline: Unsere Schöne
-subheadline: ... steht über den Dingen
+headerImage: /img/11Alle Pferde.jpg
+name: Reijki
+description: 'Norwegerwallach, geboren 2004 und 1,51 m groß'
+image: /img/1Pferd Reijki.jpg
+headline: Unser Kraftpaket
+subheadline: ... stark und einfühlsam!
 ---
-Epoona unsere Schöne und Sensible wird nun aus gesundheitlichen Gründen nicht mehr geritten. 
+Reijki trägt auch schwerere Menschen und auch mehrere Kinder sicher und gelassen auf seinem Rücken. 
 
-Sie freut sich aber über Bodenarbeit, leichtes Longieren und natürlich darüber, 
+Durch sein absolut ausgeglichenes und ruhiges Wesen hat er viele Fans.
 
-Aufmerksamkeit zu bekommen, gestreichelt und gebürstet zu werden.
+ Reijki ist ein Alrounder! 
+
+Er ist ein tolles Therapiepferd, Reit- und Kutschpferd, sehr fein in der Bodenarbeit und lädt ein, auf ihm entspannt zu Turnen und zu Voltigieren.

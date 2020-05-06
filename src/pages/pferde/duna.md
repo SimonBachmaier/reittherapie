@@ -1,17 +1,15 @@
 ---
 templateKey: horse
 siteTitle: Unsere Therapiepferde
-headerImage: /img/11Alle Pferde.jpg
-name: Reijki
-description: 'Norwegerwallach, geboren 2004 und 1,51 m groß'
-image: /img/1Pferd Reijki.jpg
-headline: Unser Kraftpaket
-subheadline: ... stark und einfühlsam!
+headerImage: /img/1Alle Pferde.jpg
+name: Duna
+description: ' Islandpferdestute, geboren 1991 und 1,34 m groß'
+image: /img/1Pferd Duna.jpg
+headline: Unser mütterliches Therapiepferd
+subheadline: ... gutmütig und erfahren!
 ---
-Reijki trägt auch schwerere Menschen und auch mehrere Kinder sicher und gelassen auf seinem Rücken. 
+Durch ihr ruhiges Wesen fasst jeder schnell Vertrauen zu ihr.
 
-Durch sein absolut ausgeglichenes und ruhiges Wesen hat er viele Fans.
+ Mit Duna kann man auch wunderbar spielen mit den verschiedensten Materialien. 
 
- Reijki ist ein Alrounder! 
-
-Er ist ein tolles Therapiepferd, Reit- und Kutschpferd, sehr fein in der Bodenarbeit und lädt ein, auf ihm entspannt zu Turnen und zu Voltigieren.
+Eine wunderschöne Erfahrung sind Ausflüge mit ihr in die Natur.

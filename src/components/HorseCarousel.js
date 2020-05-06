@@ -60,9 +60,9 @@ export default (props) => {
                             ref={(el) => (Carousel = el)}
                             responsive={{
                             0: {
-                                items: 1
+                                items: 2
                             },
-                            440: {
+                            320: {
                                 items: 2
                             },
                             1024: {
