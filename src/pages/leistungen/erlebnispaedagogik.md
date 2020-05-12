@@ -26,8 +26,8 @@ textNextToImage: >-
   während der Erlebnispädagogik mit dem Pferd erfahren und erlernt haben,
   stärken unser Selbstbewusstsein und unseren Selbstwert!**
 ---
-**Erlebnisse mit dem Pferd** sind nicht nur die **großen Abenteuer**, wie Ausritte oder Wanderungen mit dem Pferd, die uns helfen Grenzen zu überwinden und Freiheit zu spüren.
+**Erlebnisse mit dem Pferd** sind nicht nur die **großen Abenteuer**, wie Ausritte, Wanderungen mit dem Pferd, die uns helfen Grenzen zu überwinden und Freiheit zu spüren.
 
-Auch die **ruhigen Erlebnisse mit dem Pferd**, wie den Pferden beim Heu kauen und grasen zuzuhören oder die Wärme des Pferdes zu spüren oder Entspannungsübungen auf dem Pferd zu machen, regen unser Körpergefühl  an und fördern unser Selbstvertrauen.
+Auch die **ruhigen und kleinen Erlebnisse mit dem Pferd**, wie den Pferden beim Heu kauen und grasen zuzuhören, die Wärme des Pferdes zu spüren oder Entspannungsübungen auf dem Pferd zu machen, regen unser Körpergefühl  an und fördern unser Selbstvertrauen.
 
 **Erlebnispädagogik mit dem Pferd steigert unsere Lebensfreude, Phantasie und Kreativität, stärkt unseren Körper und macht uns glücklich!**
