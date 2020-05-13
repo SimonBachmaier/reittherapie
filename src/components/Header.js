@@ -48,6 +48,11 @@ const Header = () => {
         }
     `);
 
+    let horsePages = getPagesByUrlPart('/pferde/');
+    let featurePages = getPagesByUrlPart('/leistungen/');
+    horsePages = sortPagesByNavOrder(horsesPages);
+    featurePages = sortPagesByNavOrder(featurePages);
+
     return (
         <header role="banner">
             <Navbar bg="light" variant="dark" expand="md">
@@ -63,24 +68,18 @@ const Header = () => {
                                         <React.Fragment>
                                             <NavLink to="/" label="Home" />
                                             <NavDropdown title="Therapien" id="nav-dropdown" active={location.pathname.indexOf('/leistungen/') > -1}>
-                                                {data.allMarkdownRemark.edges.map((item, index)=> {
-                                                    if (item.node.fields.slug.indexOf('/leistungen/')  > -1){
-                                                        return (
-                                                            <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
-                                                        )   ;
-                                                    }
-                                                    return '';
+                                                {featurePages.map((item, index)=> {
+                                                    return (
+                                                        <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
+                                                    );
                                                 })}
                                             </NavDropdown>
                                             <NavLink to="/ueber-mich" label="Über mich" />
                                             <NavDropdown title="Pferde" id="nav-dropdown" active={location.pathname.indexOf('/pferde/') > -1}>
-                                                {data.allMarkdownRemark.edges.map((item, index)=> {
-                                                    if (item.node.fields.slug.indexOf('/pferde/') > -1){
-                                                        return (
-                                                            <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
-                                                        )   ;
-                                                    }
-                                                    return '';
+                                                {horsePages.map((item, index)=> {
+                                                    return (
+                                                        <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
+                                                    );
                                                 })}
                                             </NavDropdown>
                                         </React.Fragment>
@@ -94,5 +93,20 @@ const Header = () => {
         </header>
     )
 };
+
+function getPagesByUrlPart(pages, urlPart) {
+    return pages.filter(item => item.node.fields.slug.indexOf(urlPart) > -1);
+}
+function sortPagesByNavOrder(pages) {
+    pages.sort((page1, page2) => {
+        let navOrderPage1 = page1.node.fields.navigationOrder;
+        let navOrderPage2 = page2.node.fields.navigationOrder;
+        if (navOrderPage1 <= navOrderPage2) {
+            return -1;
+        } else {
+            return 1;
+        }
+    });
+}
 
 export default Header;

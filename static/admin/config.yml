@@ -15,6 +15,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "horse"}
       - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+      - {label: "Reihenfolge in Navigation (kleinste Zahl zuerst)", name: "navigationOrder", widget: "number"}
       - {label: "Header-Bild", name: "headerImage", widget: "image"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Kurzbeschreibung", name: "description", widget: "string"}
@@ -32,6 +33,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "horse"}
       - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+      - {label: "Reihenfolge in Navigation (kleinste Zahl zuerst)", name: "navigationOrder", widget: "number"}
       - {label: "Header-Bild", name: "headerImage", widget: "image"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Kurzbeschreibung (für Übersicht)", name: "description", widget: "string"}

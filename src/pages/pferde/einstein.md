@@ -1,6 +1,7 @@
 ---
 templateKey: horse
 siteTitle: Unsere Therapiepferde
+navigationOrder: 20
 headerImage: /img/1Alle Pferde.jpg
 name: Einstein
 description: 'Quarter Horse-Wallach, geboren: 2007 und 1,52 m groß'

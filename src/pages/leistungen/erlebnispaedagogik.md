@@ -1,6 +1,7 @@
 ---
 templateKey: feature
 siteTitle: Erlebnispädagogik
+navigationOrder: 10
 headerImage: /img/001.jpg
 name: Erlebnispädagogik mit dem Pferd
 description: .

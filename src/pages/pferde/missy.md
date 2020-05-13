@@ -1,6 +1,7 @@
 ---
 templateKey: horse
 siteTitle: Unsere Therapiepferde
+navigationOrder: 40
 headerImage: /img/1Alle Pferde.jpg
 name: Missy
 description: ' Quarter-Isländer-Stute, geboren 2002 und 1,40 m groß'

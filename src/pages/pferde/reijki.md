@@ -1,6 +1,7 @@
 ---
 templateKey: horse
 siteTitle: Unsere Therapiepferde
+navigationOrder: 50
 headerImage: /img/11Alle Pferde.jpg
 name: Reijki
 description: 'Norwegerwallach, geboren 2004 und 1,51 m groß'
