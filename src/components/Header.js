@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Container from 'react-bootstrap/Container';
 import { Location } from '@reach/router';
+import { getPageEdgesByUrlPart, sortPageEdgesByNavOrder } from '../shared/pageSort';
 
 
 const NavLink = (props) => {
@@ -38,6 +39,7 @@ const Header = () => {
                     node {
                         frontmatter {
                             name
+                            navigationOrder
                         }
                         fields {
                             slug
@@ -47,11 +49,11 @@ const Header = () => {
             }
         }
     `);
-
-    let horsePages = getPagesByUrlPart('/pferde/');
-    let featurePages = getPagesByUrlPart('/leistungen/');
-    horsePages = sortPagesByNavOrder(horsesPages);
-    featurePages = sortPagesByNavOrder(featurePages);
+    let pageEdges = data.allMarkdownRemark.edges;
+    let horsePageEdges = getPageEdgesByUrlPart(pageEdges, '/pferde/');
+    let featurePageEdges = getPageEdgesByUrlPart(pageEdges, '/leistungen/');
+    sortPageEdgesByNavOrder(horsePageEdges);
+    sortPageEdgesByNavOrder(featurePageEdges);
 
     return (
         <header role="banner">
@@ -68,7 +70,7 @@ const Header = () => {
                                         <React.Fragment>
                                             <NavLink to="/" label="Home" />
                                             <NavDropdown title="Therapien" id="nav-dropdown" active={location.pathname.indexOf('/leistungen/') > -1}>
-                                                {featurePages.map((item, index)=> {
+                                                {featurePageEdges.map((item, index)=> {
                                                     return (
                                                         <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
                                                     );
@@ -76,7 +78,7 @@ const Header = () => {
                                             </NavDropdown>
                                             <NavLink to="/ueber-mich" label="Über mich" />
                                             <NavDropdown title="Pferde" id="nav-dropdown" active={location.pathname.indexOf('/pferde/') > -1}>
-                                                {horsePages.map((item, index)=> {
+                                                {horsePageEdges.map((item, index)=> {
                                                     return (
                                                         <NavDropdownLink to={item.node.fields.slug} label={item.node.frontmatter.name} key={index} />
                                                     );
@@ -93,20 +95,5 @@ const Header = () => {
         </header>
     )
 };
-
-function getPagesByUrlPart(pages, urlPart) {
-    return pages.filter(item => item.node.fields.slug.indexOf(urlPart) > -1);
-}
-function sortPagesByNavOrder(pages) {
-    pages.sort((page1, page2) => {
-        let navOrderPage1 = page1.node.fields.navigationOrder;
-        let navOrderPage2 = page2.node.fields.navigationOrder;
-        if (navOrderPage1 <= navOrderPage2) {
-            return -1;
-        } else {
-            return 1;
-        }
-    });
-}
 
 export default Header;

@@ -4,6 +4,7 @@ import 'react-alice-carousel/lib/scss/alice-carousel.scss';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { sortPageEdgesByNavOrder } from '../shared/pageSort';
 
 export default (props) => {
     const data = useStaticQuery(graphql`
@@ -20,6 +21,7 @@ export default (props) => {
                                     }
                                 }
                             }
+                            navigationOrder
                         }
                         fields {
                             slug
@@ -29,6 +31,9 @@ export default (props) => {
             }
         }
     `);
+
+    let horsePageEdges = data.allMarkdownRemark.edges;
+    sortPageEdgesByNavOrder(horsePageEdges);
     
     let Carousel;
     return (
@@ -69,7 +74,7 @@ export default (props) => {
                                 items: 3
                             }
                         }}>
-                            {data.allMarkdownRemark.edges.map((item, index) => {
+                            {horsePageEdges.map((item, index) => {
                                 return(
                                     <div key={index}>
                                         <Link to={item.node.fields.slug} className="img-bg" style={{'backgroundImage': "url('" + item.node.frontmatter.image.childImageSharp.fluid.src + "')"}}>

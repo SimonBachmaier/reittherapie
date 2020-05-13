@@ -2,6 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link, useStaticQuery, graphql } from 'gatsby';
+import { sortPageEdgesByNavOrder } from '../shared/pageSort';
 
 export default (props) => {
     const data = useStaticQuery(graphql`
@@ -12,6 +13,7 @@ export default (props) => {
                         frontmatter {
                             name
                             description
+                            navigationOrder
                         }
                         fields {
                             slug
@@ -22,12 +24,13 @@ export default (props) => {
         }
     `);
 
-    let items = data.allMarkdownRemark.edges;
+    let featurePageEdges = data.allMarkdownRemark.edges;
+    sortPageEdgesByNavOrder(featurePageEdges);
     let rows = [];
-    for (let i = 0; i < (Math.ceil(items.length / 3)); i++) {
+    for (let i = 0; i < (Math.ceil(featurePageEdges.length / 3)); i++) {
         let children = [];
         for (let j = 0; j < 3; j++) {
-            let item = items[i*3 + j]
+            let item = featurePageEdges[i*3 + j]
             if (item) {
                 children.push(
                     <Col md="4" key={item.node.fields.slug}>
@@ -42,7 +45,7 @@ export default (props) => {
                 );  
             }          
         }
-        rows.push(<Row className="justify-content-center">{children}</Row>);
+        rows.push(<Row className="justify-content-center" key={i}>{children}</Row>);
     }
     return (
         <React.Fragment>
