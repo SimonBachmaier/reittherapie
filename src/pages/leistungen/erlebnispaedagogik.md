@@ -3,7 +3,7 @@ templateKey: feature
 siteTitle: Erlebnispädagogik
 headerImage: /img/001.jpg
 name: Erlebnispädagogik mit dem Pferd
-description: .
+description: ...
 image: /img/Katze Inzie.jpg
 headline: Was ist Erlebnispädagogik mit dem Pferd
 subheadline: Grenzen überwinden - Freiheit
@@ -13,13 +13,18 @@ textNextToImage: >-
   Gruppen geeignet.
 
 
-  **Erlebnispädagogik mit dem Pferd** schenkt uns Menschen elementare und vielfältige Erfahrungen. Wir erleben uns durch die **Präsenz des Pferdes** und die **vielfältigen Erlebnismöglichkeiten mit dem Pferd** auf eine neue Weise.
+  **Erlebnispädagogik mit dem Pferd** schenkt uns Menschen elementare und
+  vielfältige Erfahrungen. Wir erleben uns durch die **Präsenz des Pferdes** und
+  die **vielfältigen Erlebnismöglichkeiten mit dem Pferd** auf eine neue Weise.
 
 
-  **Stärken** kommen zum vorschein, verschüttete ursprüngliche Gefühle, wohltuende und auch anregende Gefühle zeigen sich uns und beleben uns.
+  **Stärken** kommen zum vorschein, verschüttete ursprüngliche Gefühle,
+  wohltuende und auch anregende Gefühle zeigen sich uns und beleben uns.
 
 
-  **Die neu erworbenen, emotionalen und lebenspraktischen Fähigkeiten, die wir während der Erlebnispädagogik mit dem Pferd erfahren und erlernt haben, stärken unser Selbstbewusstsein und unseren Selbstwert!**
+  **Die neu erworbenen, emotionalen und lebenspraktischen Fähigkeiten, die wir
+  während der Erlebnispädagogik mit dem Pferd erfahren und erlernt haben,
+  stärken unser Selbstbewusstsein und unseren Selbstwert!**
 ---
 **Erlebnisse mit dem Pferd** sind nicht nur die **großen Abenteuer**, wie Ausritte, Wanderungen mit dem Pferd, die uns helfen Grenzen zu überwinden und Freiheit zu spüren.
 
