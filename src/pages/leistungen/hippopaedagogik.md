@@ -2,9 +2,9 @@
 templateKey: feature
 siteTitle: Hippopädagogik®
 navigationOrder: 20
+previewImage: /img/Tonne Aktion.jpg
 headerImage: /img/001.jpg
 name: Hippopädagogik®
-description: .
 image: /img/Tonne Aktion.jpg
 headline: Was ist Hippopädagogik®
 subheadline: Freude an Bewegung

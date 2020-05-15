@@ -2,9 +2,9 @@
 templateKey: feature
 siteTitle: Sensorische Integration
 navigationOrder: 50
+previewImage: /img/1Sensorische.jpg
 headerImage: /img/001.jpg
 name: Sensorische Integration
-description: .
 image: /img/1Sensorische.jpg
 headline: Was ist sensorische Integrationstherapie
 subheadline: Reiz und Reaktion

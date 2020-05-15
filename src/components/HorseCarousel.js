@@ -40,7 +40,7 @@ export default (props) => {
         <Row className={props.className}>
             <Col md="4" className="pr-5">
                 <h2 className="mb-3">Unsere Therapiepferde</h2>
-                <p className="mb-5">Unsere Therapiepferde haben ein ausgeglichenes und ruhiges Wesen, da sie artgerecht und zufrieden in einem großen Offenstall mit ständigem Zugang zu Heu und sehr großer Koppel in einer Herde mit 7 Pferden leben.</p>
+                <p className="mb-5">Unsere Therapiepferde haben ein ausgeglichenes und ruhiges Wesen. Sie leben in einer Herde mit 7 Pferden artgerecht und zufrieden in einem großen Offenstall und auf einer sehr großen Koppel.</p>
                 
                 <div className="mb-3 custom-nav">
                 {props.noButtons ? (

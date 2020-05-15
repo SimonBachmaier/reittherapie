@@ -12,8 +12,14 @@ export default (props) => {
                     node {
                         frontmatter {
                             name
-                            description
                             navigationOrder
+                            previewImage {
+                                childImageSharp {
+                                    fluid(maxWidth: 512, quality: 90) {
+                                    ...GatsbyImageSharpFluid_noBase64
+                                    }
+                                }
+                            }
                         }
                         fields {
                             slug
@@ -26,27 +32,30 @@ export default (props) => {
 
     let featurePageEdges = data.allMarkdownRemark.edges;
     sortPageEdgesByNavOrder(featurePageEdges);
+
     let rows = [];
-    for (let i = 0; i < (Math.ceil(featurePageEdges.length / 3)); i++) {
-        let children = [];
-        for (let j = 0; j < 3; j++) {
-            let item = featurePageEdges[i*3 + j]
+    let children = [];
+    for (let i = 0; i < featurePageEdges.length; i++) {
+            let item = featurePageEdges[i];
             if (item) {
                 children.push(
-                    <Col md="4" key={item.node.fields.slug}>
+                    <Col md="6" lg="4" key={item.node.fields.slug}>
                         <Link className="media d-block media-feature text-center" to={item.node.fields.slug}>
                             <div className="mr-3 icon-wrap"><span className="custom-icon flaticon-scissors-1"></span></div>
                             <div className="media-body">
                                 <h3>{item.node.frontmatter.name}</h3>
-                                <p>{item.node.frontmatter.description}</p>
+                                {item.node.frontmatter.description ? (
+                                    <p>{item.node.frontmatter.description}</p>
+                                ) : ("")}
+                                <img className="feature-preview-image" src={item.node.frontmatter.previewImage.childImageSharp.fluid.src} alt={item.node.frontmatter.name} />
                             </div>
                         </Link>
                     </Col>
                 );  
-            }          
         }
-        rows.push(<Row className="justify-content-center" key={i}>{children}</Row>);
     }
+    
+    rows.push(<Row className="justify-content-center" key={rows.length}>{children}</Row>);
     return (
         <React.Fragment>
             {rows}

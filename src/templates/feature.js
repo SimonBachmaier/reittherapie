@@ -42,7 +42,6 @@ export const pageQuery = graphql`
           publicURL
         }
         name
-        description
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
