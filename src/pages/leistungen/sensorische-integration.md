@@ -2,10 +2,10 @@
 templateKey: feature
 siteTitle: Sensorische Integration
 navigationOrder: 50
-previewImage: /img/1Sensorische.jpg
+previewImage: /img/11-penelope.jpg
 headerImage: /img/001.jpg
 name: Sensorische Integration
-image: /img/1Sensorische.jpg
+image: /img/11-penelope.jpg
 headline: Was ist sensorische Integrationstherapie
 subheadline: Reiz und Reaktion
 textNextToImage: >-
@@ -15,9 +15,7 @@ textNextToImage: >-
   Gedanken erzeugen kann.
 
 
-  Die sensorische Integration sortiert, ordnet und vereint alle Sinneseindrücke
-  des Individuums zu einer vollständigen und umfassenden Hirnfunktion und
-  neurophysiologischen Funktion.
+  Die sensorische Integration sortiert, ordnet und vereint alle Sinneseindrücke des Individuums zu einer vollständigen und umfassenden Hirnfunktion und neurophysiologischen Funktion.
 
 
 
@@ -25,14 +23,10 @@ textNextToImage: >-
   Der Mensch ist ständig unzähligen Sinneseindrücken und Reizen ausgesetzt. 
 
 
-  Um mit diesen zahllosen Informationen fertig zu werden, diese angepasst
-  empfinden zu können und angemessene, befriedigende Reaktionen herzuvorbringen,
-  ist eine gut funktionierende sensorische Integration eine wichtige
-  Voraussetzung.
+  Um mit diesen zahllosen Informationen fertig zu werden, diese angepasst empfinden zu können und angemessene, befriedigende Reaktionen herzuvorbringen, ist eine gut funktionierende sensorische Integration eine wichtige Voraussetzung.
 
 
-  Dies ist dann der Fall, wenn alle erforderlichen Abschnitte des Nervensystems
-  sinnvoll miteinander zusammenarbeiten.
+  Dies ist dann der Fall, wenn alle erforderlichen Abschnitte des Nervensystems sinnvoll miteinander zusammenarbeiten.
 ---
 Die **emotionale Aktivierung des Menschen** während der Therapie mit den Pferden, wie mit Freude im Hier und Jetzt zu sein, durch den natürlichen und großen Aufforderungscharakter des Pferdes, regt die Arbeit des Limbischen Systems in der Großhirnhemisphäre an. 
 
