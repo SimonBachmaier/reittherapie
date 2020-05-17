@@ -2,9 +2,9 @@
 templateKey: horse
 siteTitle: Unsere Therapiepferde
 navigationOrder: 30
-headerImage: /img/1Alle Pferde.jpg
+headerImage: /img/111alle-pferde.jpg
 name: Epona
-description: 'Araberstute, geboren 1995 und 1,52 m groß'
+description: Araberstute, geboren 1995 und 1,52 m groß
 image: /img/1Pferd Epona.jpg
 headline: Unsere Schöne
 subheadline: ... steht über den Dingen
