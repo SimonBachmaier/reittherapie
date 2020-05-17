@@ -1,7 +1,7 @@
 ---
 templateKey: feature
 siteTitle: Hippopädagogik®
-navigationOrder: 20
+navigationOrder: 10
 previewImage: /img/11-lisa.jpg
 headerImage: /img/001.jpg
 name: Hippopädagogik®
