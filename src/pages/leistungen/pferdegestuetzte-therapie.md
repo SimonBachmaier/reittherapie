@@ -2,24 +2,21 @@
 templateKey: feature
 siteTitle: Pferdegestützte Therapie und Pädagogik
 navigationOrder: 30
-previewImage: /img/Pferdegestützte Therapie.jpg
+previewImage: /img/1-p.s.jpg
 headerImage: /img/001.jpg
 name: Pferdegestützte Therapie und Pädagogik
-image: /img/Pferdegestützte Therapie.jpg
-headline: 'Was ist Pferdegestützte Therapie und Pädagogik '
-subheadline: 'Führen und fühlen, Nähe und Vertrauen'
+image: /img/1-p.s.jpg
+headline: "Was ist Pferdegestützte Therapie und Pädagogik "
+subheadline: Führen und fühlen, Nähe und Vertrauen
 textNextToImage: >-
   In der **Pferdegestützten Therapie und Pädagogik** findet die Begegnung mit
   dem Pferd vom Boden aus statt.
 
 
-  Sie ist eine geeignete Intervention für Menschen, die nicht Reiten möchten
-  oder körperlich nicht in der Lage dazu sind.
+  Sie ist eine geeignete Intervention für Menschen, die nicht Reiten möchten oder körperlich nicht in der Lage dazu sind.
 
 
-  Durch die **Pferdegestützte Therapie und Pädagogik** kann sich auch eine
-  Übergangsphase entwickeln, welche zur Reitherapie hinführen kann, aber nicht
-  muß.
+  Durch die **Pferdegestützte Therapie und Pädagogik** kann sich auch eine Übergangsphase entwickeln, welche zur Reitherapie hinführen kann, aber nicht muß.
 ---
 Die **Pferdegestützte Therapie und Pädagogik** hilft Vertrauen zum Pferd aufzubauen, Ängste abzubauen und das Selbstvertrauen zu stärken.
 
