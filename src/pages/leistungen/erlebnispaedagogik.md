@@ -1,7 +1,7 @@
 ---
 templateKey: feature
 siteTitle: Erlebnispädagogik
-navigationOrder: 10
+navigationOrder: 40
 previewImage: /img/Katze Inzie.jpg
 headerImage: /img/20170325_101945.jpg
 name: Erlebnispädagogik mit dem Pferd
