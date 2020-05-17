@@ -2,10 +2,10 @@
 templateKey: feature
 siteTitle: Hippopädagogik®
 navigationOrder: 20
-previewImage: /img/1le1.jpg
+previewImage: /img/11-lisa.jpg
 headerImage: /img/001.jpg
 name: Hippopädagogik®
-image: /img/1le1.jpg
+image: /img/11-lisa.jpg
 headline: Was ist Hippopädagogik®
 subheadline: Freude an Bewegung
 textNextToImage: >-
