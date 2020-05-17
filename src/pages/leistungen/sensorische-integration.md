@@ -1,7 +1,7 @@
 ---
 templateKey: feature
 siteTitle: Sensorische Integration
-navigationOrder: 50
+navigationOrder: 30
 previewImage: /img/1sensorische.jpg
 headerImage: /img/001.jpg
 name: Sensorische Integration
