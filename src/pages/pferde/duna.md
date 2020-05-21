@@ -2,9 +2,9 @@
 templateKey: horse
 siteTitle: Unsere Therapiepferde
 navigationOrder: 10
-headerImage: /img/1Alle Pferde.jpg
+headerImage: /img/111alle-pferde.jpg
 name: Duna
-description: ' Islandpferdestute, geboren 1991 und 1,34 m groß'
+description: " Islandpferdestute, geboren 1991 und 1,34 m groß"
 image: /img/1Pferd Duna.jpg
 headline: Unser mütterliches Therapiepferd
 subheadline: ... gutmütig und erfahren!
