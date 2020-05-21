@@ -24,7 +24,7 @@ const IndexPage = ({ data }) => {
       
       <SiteSection>
         <Text centered={true}
-              subheadline="Unser Therapieangebot"
+              headline="Unser Therapieangebot"
           >
               <p>
                 Aufgrund meiner vielfältigen Ausbildungen kann ich verschiedene  Therapien und pädagogische Interventionen anbieten und anwenden.<br/>

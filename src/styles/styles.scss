@@ -50,6 +50,21 @@ a.media.media-feature {
         height: 300px;
     }
 }
+.quick-info .media a  {
+    .media-body {
+        h5 {
+            color: #ff6d24;
+        }
+    }
+    &:hover {
+        .media-body {
+            h5 {
+                color: #d74800;
+            }
+        }
+    }
+    // color: #fefefe
+}
 
 .irregular-row-width-fix {
     width: 100%;

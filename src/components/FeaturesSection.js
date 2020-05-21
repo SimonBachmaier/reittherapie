@@ -47,7 +47,9 @@ export default (props) => {
                                 {item.node.frontmatter.description ? (
                                     <p>{item.node.frontmatter.description}</p>
                                 ) : ("")}
-                                <img className="feature-preview-image" src={item.node.frontmatter.previewImage.childImageSharp.fluid.src} alt={item.node.frontmatter.name} />
+                                {item.node.frontmatter.previewImage ? (
+                                    <img className="feature-preview-image" src={item.node.frontmatter.previewImage.childImageSharp.fluid.src} alt={item.node.frontmatter.name} />
+                                ) : ""}
                             </div>
                         </Link>
                     </Col>

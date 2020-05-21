@@ -23,10 +23,12 @@ const QuickInfo = () => {
                             <Col md="3" className="mb-3">
                                 <div className="media">
                                     <div className="mr-3 icon-wrap"><span className="fa fa-map-marker"></span></div>
-                                    <div className="media-body">
-                                        <h5>Göhren 14</h5>
-                                        <p>91788 Pappenheim</p>
-                                    </div>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Göhren+14,+91788+Pappenheim" target="_blank" rel="noreferrer">
+                                        <div className="media-body">
+                                            <h5>Göhren 14</h5>
+                                            <p>91788 Pappenheim</p>
+                                        </div>
+                                    </a>
                                 </div>
                             </Col>
                             <Col md="3" className="mb-3">
