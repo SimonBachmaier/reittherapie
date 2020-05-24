@@ -3,7 +3,7 @@ templateKey: feature
 siteTitle: Hippopädagogik®
 navigationOrder: 10
 previewImage: /img/11-lisa.jpg
-headerImage: /img/001.jpg
+headerImage: /img/1le1.jpg
 name: Hippopädagogik®
 image: /img/11-lisa.jpg
 headline: Was ist Hippopädagogik®
