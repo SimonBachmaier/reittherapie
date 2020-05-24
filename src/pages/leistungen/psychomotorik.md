@@ -1,6 +1,6 @@
 ---
 templateKey: feature
-siteTitle: Psychomotorik und Motopädagogik
+siteTitle: Psychomotorik
 navigationOrder: 50
 previewImage: /img/1le1.jpg
 headerImage: /img/001.jpg
