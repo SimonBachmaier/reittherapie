@@ -5,7 +5,7 @@ navigationOrder: 40
 previewImage: /img/Katze Inzie.jpg
 headerImage: /img/1lisa.jpg
 name: Erlebnispädagogik mit dem Pferd
-image: /img/Katze Inzie.jpg
+image: /img/Pferdegestützte Therapie.jpg
 headline: Was ist Erlebnispädagogik mit dem Pferd
 subheadline: Grenzen überwinden - Freiheit
 textNextToImage: >-
