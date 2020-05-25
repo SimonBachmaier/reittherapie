@@ -5,7 +5,7 @@ navigationOrder: 40
 previewImage: /img/11-c.l.jpg
 headerImage: /img/Pferdegestützte Therapie.jpg
 name: Erlebnispädagogik mit dem Pferd
-image: /img/Pferdegestützte Therapie.jpg
+image: /img/11-c.l.jpg
 headline: Was ist Erlebnispädagogik mit dem Pferd
 subheadline: Grenzen überwinden - Freiheit
 textNextToImage: >-
