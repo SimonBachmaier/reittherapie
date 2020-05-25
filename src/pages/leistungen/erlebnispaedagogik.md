@@ -3,7 +3,7 @@ templateKey: feature
 siteTitle: Erlebnispädagogik
 navigationOrder: 40
 previewImage: /img/11-c.l.jpg
-headerImage: /img/1lisa.jpg
+headerImage: /img/Pferdegestützte Therapie.jpg
 name: Erlebnispädagogik mit dem Pferd
 image: /img/Pferdegestützte Therapie.jpg
 headline: Was ist Erlebnispädagogik mit dem Pferd
