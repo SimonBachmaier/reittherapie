@@ -23,9 +23,9 @@ const IndexPage = ({ data }) => {
       </SiteSection>
       
       <SiteSection>
-        <Text centered={true}
-              headline="Unser Therapieangebot"
-          >
+        <Text className="feature-title-home" centered={true} headline="Unser Therapieangebot"></Text>
+          <FeaturesSection />
+        <Text centered={true}>
               <p>
                 Aufgrund meiner vielfältigen Ausbildungen kann ich verschiedene  Therapien und pädagogische Interventionen anbieten und anwenden.<br/>
                 <br/>
@@ -33,10 +33,9 @@ const IndexPage = ({ data }) => {
                 <br/>
                 Wir arbeiten auch interdisziplinär mit anderen Therapeuten, wie Heilpädagogen, Physiotherapeuten, Ergotherapeuten, Logopäden und Psychologen zusammen.<br/>
                 <br/>
-                Begleitende Elterngespräche und der Austausch mit Erziehern und pädagogischen Begleitpersonen sind auch wichtige Aspekte unserer therapeutischen und heilpädagogischen Arbeit.</p>
+                Begleitende Elterngespräche und der Austausch mit Erziehern und pädagogischen Begleitpersonen sind auch wichtige Aspekte unserer therapeutischen und heilpädagogischen Arbeit.
+              </p>
           </Text>
-
-          <FeaturesSection />
       </SiteSection>
 
       <SiteSection>
