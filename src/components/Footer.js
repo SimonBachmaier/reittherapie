@@ -18,29 +18,6 @@ const Footer = () => {
                         <li className="d-flex"><span className="mr-3"><span className="fa fa-envelope"></span></span><a href="mailto:reittherapie.bachmaier@gmail.com">reittherapie.bachmaier@gmail.com</a></li>
                         </ul>
                     </Col>
-                    {/* <Col md="2">
-                        <h3 className="mb-4">Links</h3>
-                        <ul className="list-unstyled ">
-                            <li><Link to="/">Home</Link></li>
-                        </ul>
-                    </Col> */}
-                    {/* <Col md="3">
-                        <h3 className="mb-4">Latest Blog</h3>
-                        <ul className="list-unstyled blog-entry-footer">
-                        <li><a href="#">
-                            <span className="post-meta">March 20, 2018</span>
-                            <h3>7 Best Destination in The World</h3></a>
-                        </li>
-                        <li><a href="#">
-                            <span className="post-meta">March 20, 2018</span>
-                            <h3>4 Hour Work Week And The Rest Is Travel</h3></a>
-                        </li>
-                        <li><a href="#">
-                            <span className="post-meta">March 20, 2018</span>
-                            <h3>Why You Should Travel Today</h3></a>
-                        </li>
-                        </ul>
-                    </Col> */}
                     <Col md="3" className="offset-md-3">
                         <h3 className="mb-4">Sonstiges</h3>
                         <ul className="list-unstyled ">

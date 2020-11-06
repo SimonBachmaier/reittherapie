@@ -2,24 +2,9 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-// import { graphql, useStaticQuery } from 'gatsby'
-// import { Waypoint } from 'react-waypoint'
 import Reveal from './Reveal'
 
 const HeroImage = (props) => {
-    // const data = useStaticQuery(
-    //     graphql`
-    //         query {
-    //             file(relativePath: { regex: "/header-image.jpg/" }) {
-    //                 childImageSharp {
-    //                     fluid(maxWidth: 1920, maxHeight: 1080) {
-    //                     ...GatsbyImageSharpFluid_noBase64
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     `
-    // )
     return (
         <React.Fragment>
                 { !props.hideImage && props.image ? (
