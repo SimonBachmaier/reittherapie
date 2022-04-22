@@ -11,16 +11,10 @@ subheadline: Freiheit und Abenteuer
 textNextToImage: |-
   **Indianercamp mit Tipi und Übernachtung**
 
-  **Wann: 1. August - 4. August 2022**
+  Wann: **1. August - 4. August 2022**
 
   zusammen mit Wildnispädagogin/Sozialpädagogin **Monica Hajek**
 ---
-**Indianercamp mit Tipi und Übernachtung**
-
-**Wann: 1. August - 4. August 2022**
-
-zusammen mit Wildnispädagogin/Sozialpädagogin **Monica Hajek**
-
 
 
 **Anmeldung und weitere Informationen unter:**
