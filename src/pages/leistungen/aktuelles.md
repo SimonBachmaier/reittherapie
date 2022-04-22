@@ -19,6 +19,8 @@ textNextToImage: |-
 
 Wann: **1. August - 4. August 2022**
 
+für Kinder von 7-13 Jahre
+
 zusammen mit Wildnispädagogin/Sozialpädagogin **Monica Hajek**
 
 
