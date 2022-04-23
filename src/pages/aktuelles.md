@@ -1,8 +1,6 @@
 ---
-templateKey: horse
+templateKey: news
 siteTitle: Aktuelles
-navigationOrder: 60
-previewImage: /img/aktuelles-indianercamp.jpg
 headerImage: /img/aktuelles-indianercamp_header.jpg
 name: Aktuelles
 image: /img/aktuelles-indianercamp_bild.jpg
