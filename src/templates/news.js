@@ -14,7 +14,7 @@ const News = ({data}) => {
     <Layout headerText={md.frontmatter.siteTitle} headerImage={md.frontmatter.headerImage.childImageSharp} siteTitle={md.frontmatter.name}>
       <SiteSection>
         <Text className=""
-          headline={md.frontmatter.name}
+          headline="Aktuelles"
           subheadline={md.frontmatter.description}
           centered={true}
         >

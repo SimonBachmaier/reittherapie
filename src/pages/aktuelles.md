@@ -2,16 +2,10 @@
 templateKey: news
 siteTitle: Aktuelles
 headerImage: /img/aktuelles-indianercamp_header.jpg
-name: Aktuelles
+description: Auf dieser Seite finden Sie Informationen zu aktuellen Veranstaltungen und Nachrichten.
 image: /img/aktuelles-indianercamp_bild.jpg
-headline: "Aktuelles: Indianercamp"
+headline: "Indianercamp"
 subheadline: Freiheit und Abenteuer
-textNextToImage: |-
-  **Indianercamp mit Tipi und Übernachtung**
-
-  Wann: **1. August - 4. August 2022**
-
-  zusammen mit Wildnispädagogin/Sozialpädagogin **Monica Hajek**
 ---
 **Indianercamp mit Tipi und Übernachtung**
 

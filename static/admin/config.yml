@@ -58,6 +58,17 @@ collections:
           - {label: "Titel", name: headline, widget: string}
           - {label: "Untertitel", name: subheadline, widget: markdown}
           - {label: "Fließtext", name: "body", widget: "markdown"}
+      - file: "src/pages/aktuelles.md"
+        label: "Aktuelles"
+        name: "aktuelles"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news"}
+          - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+          - {label: "Header-Bild", name: "headerImage", widget: "image"}
+          - {label: "Beschreibung", name: "description", widget: "string"}
+          - {label: "Titel", name: headline, widget: string}
+          - {label: "Untertitel", name: subheadline, widget: markdown}
+          - {label: "Fließtext", name: "body", widget: "markdown"}
       - file: "src/pages/ueber-mich.md"
         label: "Über mich"
         name: "ueber-mich"
