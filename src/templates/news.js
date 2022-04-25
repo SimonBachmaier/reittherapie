@@ -13,12 +13,12 @@ const News = ({data}) => {
   return (
     <Layout headerText={md.frontmatter.siteTitle} headerImage={md.frontmatter.headerImage.childImageSharp} siteTitle={md.frontmatter.name}>
       <SiteSection>
-        <Text className=""
+        {/* <Text className=""
           headline="Aktuelles"
           subheadline={md.frontmatter.description}
           centered={true}
         >
-        </Text>
+        </Text> */}
         <TextImage className="pt-5"
           fluidImage={md.frontmatter.image.childImageSharp.fluid}
           headline={md.frontmatter.headline}

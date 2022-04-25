@@ -6,7 +6,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import Container from 'react-bootstrap/Container';
 import { Location } from '@reach/router';
 import { getPageEdgesByUrlPart, sortPageEdgesByNavOrder } from '../shared/pageSort';
-
+import Img from "gatsby-image"
 
 const NavLink = (props) => {
     return (
@@ -47,9 +47,19 @@ const Header = () => {
                     }
                 }
             }
+            file(relativePath: { eq: "logo_transparent_xsm.png" }) {
+                childImageSharp {
+                  # Specify the image processing specifications right in the query.
+                  # Makes it trivial to update as your page's design changes.
+                  fluid(maxWidth: 400, maxHeight: 400) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+            }
         }
     `);
     let pageEdges = data.allMarkdownRemark.edges;
+    let logoFixed = data.file.childImageSharp.fluid;
     let horsePageEdges = getPageEdgesByUrlPart(pageEdges, '/pferde/');
     let featurePageEdges = getPageEdgesByUrlPart(pageEdges, '/leistungen/');
     sortPageEdgesByNavOrder(horsePageEdges);
@@ -59,7 +69,12 @@ const Header = () => {
         <header role="banner">
             <Navbar bg="light" variant="dark" expand="md">
                 <Container>
-                    <Link className="navbar-brand" to="/" style={{ textTransform: 'unset' }}>Reittherapie Bachmaier</Link>
+                    <Link className="navbar-brand" to="/" style={{ textTransform: 'unset' }}>
+                        <Img className="website-logo" fluid={logoFixed}  />
+                    </Link>
+                    <Link className="navbar-brand" to="/" style={{ textTransform: 'unset' }}>
+                        Reittherapie Bachmaier
+                    </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                     <Navbar.Collapse id="basic-navbar-nav">

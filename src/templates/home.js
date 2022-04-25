@@ -7,10 +7,13 @@ import HorseCarousel from '../components/HorseCarousel';
 import Text from '../components/Text';
 import SiteSection from '../components/SiteSection';
 import FeaturesSection from '../components/FeaturesSection';
+import Img from "gatsby-image"
+import { Container, Row } from 'react-bootstrap';
 
 
 const IndexPage = ({ data }) => {
   let md = data.markdownRemark;
+  let logoFixed = data.file.childImageSharp.fluid;
   return (
     <Layout headerText={md.frontmatter.siteTitle} fancyFont={true} headerImage={md.frontmatter.headerImage.childImageSharp}>
 
@@ -19,8 +22,14 @@ const IndexPage = ({ data }) => {
           headline={md.frontmatter.headline}
           subheadline={md.frontmatter.subheadline}
           html={md.html}
-         /> 
+         />
       </SiteSection>
+
+      <Container>
+        <Row className='home-logo-container'>
+            <Img className="home-logo" fluid={logoFixed}  />
+        </Row>
+      </Container>
       
       <SiteSection>
         <Text className="feature-title-home" centered={true} headline="Unser Therapieangebot"></Text>
@@ -48,7 +57,6 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage
 
-
 export const pageQuery = graphql`
   query IndexPageTemplate($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -66,6 +74,15 @@ export const pageQuery = graphql`
         subheadline
       }
       html
+    }
+    file(relativePath: { eq: "logo_transparent_xsm.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 1200, maxHeight: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
     }
   }
 `

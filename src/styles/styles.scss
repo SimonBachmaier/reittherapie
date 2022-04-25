@@ -59,6 +59,24 @@ a.media.media-feature {
     padding-bottom: 45px;
 }
 
+.website-logo {
+    width: 70px;
+    
+}
+.home-logo-container {
+    display: flex;
+    justify-content: center;
+    .home-logo {
+        width: 300px;
+    }
+}
+.textImage-align-right {
+    text-align: right;
+}
+.quick-info .media p {
+    color: #eaeaea;
+}
+
 @media screen and (min-width: 575px) {
     .site-hero.overlay h1, .site-hero-no-image h1 {
         font-size: 50px;

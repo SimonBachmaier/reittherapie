@@ -7,6 +7,21 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "news"
+    identifier_field: "siteTitle"
+    label: "Aktuelles"
+    folder: "src/pages/aktuelles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news"}
+      - {label: "Seitentitel", name: "siteTitle", widget: "string"}
+      - {label: "Header-Bild", name: "headerImage", widget: "image"}
+      - {label: "Bild", name: "image", widget: "image"}
+      - {label: "Titel neben Bild", name: "headline", widget: "string"}
+      - {label: "Untertitel neben Bild", name: "subheadline", widget: "string"}
+      - {label: "Beschreibung neben Bild", name: "body", widget: "markdown"}
+
   - name: "horse"
     identifier_field: "name"
     label: "Pferde"
@@ -66,9 +81,6 @@ collections:
           - {label: "Seitentitel", name: "siteTitle", widget: "string"}
           - {label: "Header-Bild", name: "headerImage", widget: "image"}
           - {label: "Beschreibung", name: "description", widget: "string"}
-          - {label: "Titel", name: headline, widget: string}
-          - {label: "Untertitel", name: subheadline, widget: markdown}
-          - {label: "Fließtext", name: "body", widget: "markdown"}
       - file: "src/pages/ueber-mich.md"
         label: "Über mich"
         name: "ueber-mich"
