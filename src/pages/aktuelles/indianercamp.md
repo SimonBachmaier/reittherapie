@@ -3,19 +3,7 @@ templateKey: news
 siteTitle: Indianercamp
 headerImage: /img/aktuelles-indianercamp_header.jpg
 image: /img/aktuelles-indianercamp_bild.jpg
-headline: "Indianercamp"
-subheadline: Freiheit und Abenteuer
+headline: Noch keine Neuigkeiten für 2023
+subheadline: 18.02.2023
 ---
-**Indianercamp mit Tipi und Übernachtung**
-
-Wann: **1. August - 4. August 2022**
-
-für Kinder von 7-13 Jahre
-
-zusammen mit Wildnispädagogin/Sozialpädagogin **Monica Hajek**
-
-
-
-**Anmeldung und weitere Informationen unter:**
-
-<https://www.feuershows-kinderevents.de/ferienprogramm-indianerwoche-pferde>
+Informationen zu neuen Veranstaltungen folgen in Kürze.
