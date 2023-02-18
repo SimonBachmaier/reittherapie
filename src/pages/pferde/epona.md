@@ -11,6 +11,4 @@ subheadline: ... steht über den Dingen
 ---
 Epona unsere Schöne und Sensible wird nun aus gesundheitlichen Gründen nicht mehr geritten. 
 
-Sie freut sich aber über Bodenarbeit, leichtes Longieren und natürlich darüber, 
-
-Aufmerksamkeit zu bekommen, gestreichelt und gebürstet zu werden.
+Sie freut sich aber über Bodenarbeit, leichtes Longieren und natürlich darüber, Aufmerksamkeit zu bekommen, gestreichelt und gebürstet zu werden.
