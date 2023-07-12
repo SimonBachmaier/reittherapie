@@ -1,0 +1,84 @@
+import React from 'react';
+
+import Layout from '../../components/Layout';
+import SiteSection from '../../components/SiteSection';
+import TextImage from '../../components/TextImage';
+import Text from '../../components/Text';
+import HorseCarousel from '../../components/HorseCarousel';
+
+const Aktuelles = ({ data }) => {
+  console.log(data);
+  const md = data.allMarkdownRemark;
+  
+  const image = data.file.childImageSharp;
+  let imageRight = true;
+  const newsItems = md.edges.map((e) => {
+    imageRight = !imageRight;
+    return (<React.Fragment>
+        <TextImage className="pt-5"
+          fluidImage={e.node.frontmatter.image.childImageSharp.fluid}
+          headline={e.node.frontmatter.headline}
+          subheadline={e.node.frontmatter.subheadline}
+          html={e.node.html}
+          imageRight={imageRight}
+        /> 
+    </React.Fragment>);
+    });
+  return (
+    <Layout headerText="Aktuelles" headerImage={image} siteTitle="Aktuelles">
+
+      {/* <SiteSection>
+        <Text className=""
+          headline="Aktuelles"
+          subheadline="Auf dieser Seite finden Sie Informationen zu aktuellen Veranstaltungen und Nachrichten."
+          centered={true}
+        />
+        {newsItems}
+      </SiteSection>
+
+      <SiteSection>
+        <HorseCarousel className="" />
+      </SiteSection> */}
+
+      asfdg
+      
+    </Layout>
+  )
+}
+
+export default Aktuelles;
+
+export const pageQuery = graphql`
+  query NewsPageTemplate {
+    allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "news"}}}) {
+      edges {
+        node {
+          frontmatter {
+              headline
+              subheadline
+              image {
+                  childImageSharp {
+                      fluid(maxWidth: 512, quality: 90) {
+                      ...GatsbyImageSharpFluid_noBase64
+                      }
+                  }
+              }
+          }
+          html
+          fields {
+              slug
+          }
+        }
+      }
+    }
+    file(relativePath: { eq: "001.jpg" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fluid(maxWidth: 2400, maxHeight: 2400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
+  }
+`
