@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import TextImage from '../components/TextImage';
 import Text from '../components/Text';
 import SiteSection from '../components/SiteSection';
+import FeaturesSection from '../components/FeaturesSection';
 
 
 const About = ({data}) => {
@@ -20,6 +21,10 @@ const About = ({data}) => {
         >
         </TextImage> 
         <Text html={md.html} />
+      </SiteSection>
+      <SiteSection>
+        <Text className="feature-title-home" centered={true} headline="Unser sonstiges Therapieangebot"></Text>
+        <FeaturesSection excludeSiteTitle={md.frontmatter.siteTitle}/>
       </SiteSection>
 
     </Layout>

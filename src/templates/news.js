@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import TextImage from '../components/TextImage';
 import HorseCarousel from '../components/HorseCarousel';
-import Text from '../components/Text';
 import SiteSection from '../components/SiteSection';
 
 

@@ -5,12 +5,15 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import { sortPageEdgesByNavOrder } from '../shared/pageSort';
 
 export default (props) => {
+    let excludeSiteTitle = props.excludeSiteTitle ? props.excludeSiteTitle : '';
+
     const data = useStaticQuery(graphql`
         query FeaturesQuery {
             allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "feature"}}}) {
                 edges {
                     node {
                         frontmatter {
+                            siteTitle
                             name
                             navigationOrder
                             previewImage {
@@ -37,7 +40,7 @@ export default (props) => {
     let children = [];
     for (let i = 0; i < featurePageEdges.length; i++) {
             let item = featurePageEdges[i];
-            if (item) {
+            if (item && item.node.frontmatter.siteTitle !== excludeSiteTitle) {
                 children.push(
                     <Col md="6" lg="4" key={item.node.fields.slug}>
                         <Link className="media d-block media-feature text-center" to={item.node.fields.slug}>

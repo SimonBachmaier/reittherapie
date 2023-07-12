@@ -33,7 +33,7 @@ const IndexPage = ({ data }) => {
       
       <SiteSection>
         <Text className="feature-title-home" centered={true} headline="Unser Therapieangebot"></Text>
-          <FeaturesSection />
+        <FeaturesSection />
         <Text centered={true}>
               <p>
                 Aufgrund meiner vielfältigen Ausbildungen kann ich verschiedene  Therapien und pädagogische Interventionen anbieten und anwenden.<br/>
