@@ -6,7 +6,7 @@ previewImage: /img/aktuelles-indianercamp_small.jpg
 headerImage: /img/aktuelles-indianercamp_header.jpg
 name: Reittherapie
 image: /img/Reittherapie-1.jpg
-headline: Therapeutisches Reiten
+headline: Therapeutisches und Heilpädagogisches Reiten
 subheadline: Sicher getragen
 textNextToImage: >-
   Das Pferd ist durch seine Größe ein ideales und lebendiges Bewegungsmedium, das uns emotional sehr anspricht.
