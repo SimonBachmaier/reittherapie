@@ -84,7 +84,7 @@ const Header = () => {
                                     return (
                                         <React.Fragment>
                                             <NavLink to="/" label="Home" />
-                                            <NavLink to="/aktuelles" label="Aktuelles" />
+                                            <NavLink to="/aktuelles" label="Interessantes" />
                                             <NavDropdown title="Therapien" id="nav-dropdown" active={location.pathname.indexOf('/leistungen/') > -1}>
                                                 {featurePageEdges.map((item, index)=> {
                                                     return (

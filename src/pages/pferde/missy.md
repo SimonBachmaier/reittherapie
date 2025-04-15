@@ -6,10 +6,10 @@ headerImage: /img/111alle-pferde.jpg
 name: Missy
 description: " Quarter-Isländer-Stute, geboren 2002 und 1,40 m groß"
 image: /img/1Pferd Missy.jpg
-headline: Die Leitstute
-subheadline: ... selbstbewusst und menschenbezogen
+headline: Ehemalige Leitstute
+subheadline: Im Ruhestand - Seit Herbst 2024 nicht mehr an unserem Hof
 ---
-Missy, unsere selbstbewusste Leitstute ist sehr menschenbezogen und liebt es viel gekrault und gebürstet zu werden.
+Missy, die selbstbewusste Leitstute ist sehr menschenbezogen und liebt es viel gekrault und gebürstet zu werden.
 
  Mit ihrem wunderschönen Schaukelgalopp lädt sie ein, das Galoppieren zu erlernen und zu geniessen.
 

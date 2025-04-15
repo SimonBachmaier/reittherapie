@@ -9,7 +9,7 @@ public_folder: /img
 collections:
   - name: "news"
     identifier_field: "siteTitle"
-    label: "Aktuelles"
+    label: "Interessantes"
     folder: "src/pages/aktuelles"
     create: true
     slug: "{{slug}}"
@@ -74,7 +74,7 @@ collections:
           - {label: "Untertitel", name: subheadline, widget: markdown}
           - {label: "Fließtext", name: "body", widget: "markdown"}
       - file: "src/pages/aktuelles.md"
-        label: "Aktuelles"
+        label: "Interessantes"
         name: "aktuelles"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "news"}

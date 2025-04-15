@@ -6,8 +6,8 @@ headerImage: /img/111alle-pferde.jpg
 name: Reijki
 description: Norwegerwallach, geboren 2004 und 1,51 m groß
 image: /img/1Pferd Reijki.jpg
-headline: Unser Kraftpaket
-subheadline: ... stark und einfühlsam!
+headline: Ein Kraftpaket
+subheadline: Im Ruhestand - Seit Herbst 2024 nicht mehr an unserem Hof
 ---
 Reijki trägt auch schwerere Menschen und auch mehrere Kinder sicher und gelassen auf seinem Rücken. 
 
