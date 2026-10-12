@@ -1,0 +1,45 @@
+---
+import { getEntry, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteSection from '../components/SiteSection.astro';
+import Text from '../components/Text.astro';
+import FeaturesSection from '../components/FeaturesSection.astro';
+import HorseCarousel from '../components/HorseCarousel.astro';
+import logo from '../assets/img/logo_transparent_xsm.png';
+
+const page = await getEntry('seiten', 'index');
+if (!page) throw new Error('src/content/seiten/index.md is missing');
+const { Content } = await render(page);
+---
+
+<BaseLayout headerText={page.data.siteTitle} headerImage={page.data.headerImage} fancyFont>
+  <SiteSection>
+    <Text headline={page.data.headline} subheadline={page.data.subheadline}>
+      <div><Content /></div>
+    </Text>
+  </SiteSection>
+
+  <div class="container">
+    <div class="row home-logo-container">
+      <Image src={logo} alt="Logo Reittherapie Bachmaier" width={600} height={600} fit="cover" class="home-logo" />
+    </div>
+  </div>
+
+  <SiteSection>
+    <Text class="feature-title-home" centered headline="Unser Therapieangebot" />
+    <FeaturesSection />
+    <Text centered>
+      <p>
+        Aufgrund meiner vielfältigen Ausbildungen kann ich verschiedene Therapien und pädagogische Interventionen anbieten und anwenden.<br /><br />
+        Bei einem Vorgespräch werden die passendsten Methoden individuell für Sie, Ihr Kind oder ihre Gruppe ermittelt. Wir erarbeiten daraufhin einen flexiblen Therapieplan für Sie, den wir je nach Fortschritt und Bedarf anpassen, um Sie zielgerichtet zu unterstützen.<br /><br />
+        Wir arbeiten auch interdisziplinär mit anderen Therapeuten, wie Heilpädagogen, Physiotherapeuten, Ergotherapeuten, Logopäden und Psychologen zusammen.<br /><br />
+        Begleitende Elterngespräche und der Austausch mit Erziehern und pädagogischen Begleitpersonen sind auch wichtige Aspekte unserer therapeutischen und heilpädagogischen Arbeit.
+      </p>
+    </Text>
+  </SiteSection>
+
+  <SiteSection>
+    <HorseCarousel />
+  </SiteSection>
+</BaseLayout>

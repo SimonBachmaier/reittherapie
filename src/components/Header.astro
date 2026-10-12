@@ -1,0 +1,66 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/img/logo_transparent_xsm.png';
+import NavDropdown from './NavDropdown.astro';
+import { getLeistungen, getPferde } from '../lib/content';
+
+const leistungen = (await getLeistungen()).map((e) => ({ href: `/leistungen/${e.id}/`, label: e.data.name }));
+const pferde = (await getPferde()).map((e) => ({ href: `/pferde/${e.id}/`, label: e.data.name }));
+
+const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+---
+
+<header role="banner">
+  <nav class="navbar navbar-expand-md navbar-dark bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="/" style="text-transform: unset">
+        <Image src={logo} alt="Logo Reittherapie Bachmaier" width={140} height={140} fit="cover" class="website-logo" loading="eager" />
+      </a>
+      <a class="navbar-brand" href="/" style="text-transform: unset">Reittherapie Bachmaier</a>
+      <button class="navbar-toggler collapsed" type="button" aria-controls="main-navbar-nav" aria-expanded="false" aria-label="Navigation umschalten">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="main-navbar-nav">
+        <div class="ml-auto pl-lg-5 pl-0 navbar-nav">
+          <div class="nav-item"><a class:list={['nav-link', { active: pathname === '/' }]} href="/">Home</a></div>
+          <div class="nav-item"><a class:list={['nav-link', { active: pathname === '/interessantes/' }]} href="/interessantes/">Interessantes</a></div>
+          <NavDropdown label="Therapien" active={pathname.startsWith('/leistungen/')} items={leistungen} />
+          <div class="nav-item"><a class:list={['nav-link', { active: pathname === '/ueber-mich/' }]} href="/ueber-mich/">Über mich</a></div>
+          <NavDropdown label="Pferde" active={pathname.startsWith('/pferde/')} items={pferde} />
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const toggler = document.querySelector<HTMLButtonElement>('.navbar-toggler');
+  const collapse = document.querySelector<HTMLElement>('.navbar-collapse');
+  toggler?.addEventListener('click', () => {
+    const open = collapse?.classList.toggle('show') ?? false;
+    toggler.classList.toggle('collapsed', !open);
+    toggler.setAttribute('aria-expanded', String(open));
+  });
+
+  const dropdowns = Array.from(document.querySelectorAll<HTMLElement>('.navbar .dropdown'));
+  const setOpen = (dropdown: HTMLElement, open: boolean) => {
+    dropdown.classList.toggle('show', open);
+    dropdown.querySelector('.dropdown-menu')?.classList.toggle('show', open);
+    dropdown.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded', String(open));
+  };
+
+  for (const dropdown of dropdowns) {
+    dropdown.querySelector('.dropdown-toggle')?.addEventListener('click', (event) => {
+      event.preventDefault();
+      const open = !dropdown.classList.contains('show');
+      dropdowns.forEach((d) => setOpen(d, d === dropdown && open));
+    });
+  }
+
+  document.addEventListener('click', (event) => {
+    if (!(event.target as Element).closest('.navbar .dropdown')) dropdowns.forEach((d) => setOpen(d, false));
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') dropdowns.forEach((d) => setOpen(d, false));
+  });
+</script>

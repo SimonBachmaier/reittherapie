@@ -1,0 +1,31 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteSection from '../../components/SiteSection.astro';
+import Text from '../../components/Text.astro';
+import TextImage from '../../components/TextImage.astro';
+import FeaturesSection from '../../components/FeaturesSection.astro';
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection('leistungen');
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props as { entry: CollectionEntry<'leistungen'> };
+const { Content } = await render(entry);
+const { siteTitle, name, headerImage, image, headline, subheadline, textNextToImage } = entry.data;
+---
+
+<BaseLayout siteTitle={name} headerText={siteTitle} headerImage={headerImage}>
+  <SiteSection>
+    <TextImage class="pt-5" image={image} headline={headline} subheadline={subheadline} markdown={textNextToImage} />
+    <Text>
+      <div><Content /></div>
+    </Text>
+  </SiteSection>
+  <SiteSection>
+    <Text class="feature-title-home" centered headline="Unser sonstiges Therapieangebot" />
+    <FeaturesSection excludeId={entry.id} />
+  </SiteSection>
+</BaseLayout>

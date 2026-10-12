@@ -1,0 +1,30 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteSection from '../../components/SiteSection.astro';
+import Text from '../../components/Text.astro';
+import TextImage from '../../components/TextImage.astro';
+import HorseCarousel from '../../components/HorseCarousel.astro';
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection('pferde');
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props as { entry: CollectionEntry<'pferde'> };
+const { Content } = await render(entry);
+const { siteTitle, name, description, headerImage, image, headline, subheadline } = entry.data;
+---
+
+<BaseLayout siteTitle={name} headerText={siteTitle} headerImage={headerImage}>
+  <SiteSection>
+    <Text centered headline={name} subheadline={description} />
+    <TextImage class="pt-5" image={image} headline={headline} subheadline={subheadline}>
+      <div><Content /></div>
+    </TextImage>
+  </SiteSection>
+  <SiteSection>
+    <HorseCarousel />
+  </SiteSection>
+</BaseLayout>

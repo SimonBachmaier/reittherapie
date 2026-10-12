@@ -1,0 +1,57 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import { renderMarkdown } from '../lib/content';
+
+interface Props {
+  class?: string;
+  imageRight?: boolean;
+  image?: ImageMetadata;
+  alt?: string;
+  headline?: string;
+  subheadline?: string;
+  markdown?: string;
+}
+
+const { class: className = '', imageRight = false, image, alt, headline, subheadline, markdown } = Astro.props;
+const html = renderMarkdown(markdown);
+---
+
+<div class:list={['row', className]}>
+  {
+    !imageRight && (
+      <div class="col-md-6 video-wrap mb-5">
+        {image && (
+          <Image
+            src={image}
+            alt={alt ?? headline ?? ''}
+            widths={[480, 800, 1200, 2048]}
+            sizes="(min-width: 768px) 50vw, 100vw"
+            class="img-fluid w-100"
+          />
+        )}
+      </div>
+    )
+  }
+  <div class:list={['col-md-6 pl-md-5', { 'textImage-align-right': imageRight }]}>
+    {headline && <h3>{headline}</h3>}
+    {subheadline && <p class="lead">{subheadline}</p>}
+    <slot />
+    {html && <div set:html={html} />}
+  </div>
+  {
+    imageRight && (
+      <div class="col-md-6 video-wrap mb-5">
+        {image && (
+          <Image
+            src={image}
+            alt={alt ?? headline ?? ''}
+            widths={[480, 800, 1200, 2048]}
+            sizes="(min-width: 768px) 50vw, 100vw"
+            class="img-fluid w-100"
+          />
+        )}
+      </div>
+    )
+  }
+</div>

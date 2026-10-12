@@ -1,0 +1,55 @@
+---
+import { getImage } from 'astro:assets';
+import { getPferde } from '../lib/content';
+
+const pferde = await Promise.all(
+  (await getPferde()).map(async (entry) => ({
+    href: `/pferde/${entry.id}/`,
+    name: entry.data.name,
+    background: (await getImage({ src: entry.data.image, width: 512 })).src,
+  }))
+);
+---
+
+<div class="row horse-carousel-section">
+  <div class="col-md-4 pr-5">
+    <h2 class="mb-3">Unsere Therapiepferde</h2>
+    <p class="mb-5">
+      Unsere Therapiepferde haben ein ausgeglichenes und ruhiges Wesen. Sie leben in einer kleinen Herde artgerecht und zufrieden in einem großen Offenstall und auf einer sehr großen Koppel.
+    </p>
+    <div class="mb-3 custom-nav">
+      <button class="btn btn-primary btn-sm custom-prev mr-2 mb-2" type="button" aria-label="Vorheriges Pferd"><span class="fa fa-arrow-left"></span></button>
+      <button class="btn btn-primary btn-sm custom-next mr-2 mb-2" type="button" aria-label="Nächstes Pferd"><span class="fa fa-arrow-right"></span></button>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <div class="row">
+      <div class="col-md-12 slider-wrap">
+        <ul class="horse-carousel">
+          {
+            pferde.map((pferd) => (
+              <li class="horse-carousel__item">
+                <a href={pferd.href} class="img-bg" style={`background-image: url('${pferd.background}')`}>
+                  <div class="text">
+                    <h2>{pferd.name}</h2>
+                    <p>Mehr über mich</p>
+                  </div>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.horse-carousel-section').forEach((section) => {
+    const track = section.querySelector<HTMLElement>('.horse-carousel');
+    if (!track) return;
+    const step = () => track.querySelector<HTMLElement>('.horse-carousel__item')?.offsetWidth ?? 0;
+    section.querySelector('.custom-prev')?.addEventListener('click', () => track.scrollBy({ left: -step() }));
+    section.querySelector('.custom-next')?.addEventListener('click', () => track.scrollBy({ left: step() }));
+  });
+</script>

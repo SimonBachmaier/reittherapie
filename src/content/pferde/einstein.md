@@ -1,0 +1,15 @@
+---
+siteTitle: Unsere Therapiepferde
+navigationOrder: 20
+headerImage: ../../assets/img/111alle-pferde.jpg
+name: Einstein
+description: "Quarter Horse-Wallach, geboren: 2007 und 1,52 m groß"
+image: ../../assets/img/pferd-einstein.jpg
+headline: Der Platzchef
+subheadline: ... gut ausgebildet und kooperativ
+---
+Einstein, unser gut ausgebildetes und fleißiges Westernreitpferd, ist in der Therapie sehr einfühlsam, rücksichtsvoll und kooperativ. 
+
+Er interessiert sich sehr für den Menschen an seiner Seite. 
+
+Einstein lässt sich auch von Kindern mit leichter Hand durch einen Parcour führen und bleibt bei allen Übungen auf seinem Rücken stets gelassen.

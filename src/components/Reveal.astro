@@ -1,0 +1,25 @@
+---
+interface Props {
+  class?: string;
+  tag?: 'div' | 'section';
+  animation?: string;
+}
+
+const { class: className = '', tag: Tag = 'div', animation = 'fadeInUp' } = Astro.props;
+---
+
+<Tag class:list={['element-animate', className]} data-animation={animation}>
+  <slot />
+</Tag>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      const el = entry.target as HTMLElement;
+      el.classList.add('animated', el.dataset.animation ?? 'fadeInUp');
+      observer.unobserve(el);
+    }
+  });
+  document.querySelectorAll('.element-animate').forEach((el) => observer.observe(el));
+</script>

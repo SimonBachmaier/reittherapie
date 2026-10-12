@@ -1,0 +1,52 @@
+---
+import type { ImageMetadata } from 'astro';
+import Header from '../components/Header.astro';
+import HeroImage from '../components/HeroImage.astro';
+import QuickInfo from '../components/QuickInfo.astro';
+import Footer from '../components/Footer.astro';
+
+import '../fonts/fontawesome/css/font-awesome.min.css';
+import '../styles/animate.css';
+import '../styles/alotan/bootstrap.scss';
+import '../styles/alotan/style.scss';
+import '../fonts/Tahu/stylesheet.css';
+import '../styles/styles.scss';
+
+interface Props {
+  siteTitle?: string;
+  headerText: string;
+  headerImage?: ImageMetadata;
+  fancyFont?: boolean;
+}
+
+const { siteTitle, headerText, headerImage, fancyFont = false } = Astro.props;
+
+const title = 'Reittherapie Bachmaier';
+const description =
+  'Reittherapie im Altmühltal mit Petra Bachmaier. Geschult in den Bereichen Reittherapie, Ergotherapie und mehr führe ich Sie oder Ihr Kind als gelernte Erzieherin mit meinen Therapiepferden hin zu einem ausgeglicheneren Leben.';
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{siteTitle ? `${siteTitle} - ${title}` : title}</title>
+    <meta name="description" content={description} />
+    <meta name="google-site-verification" content="vgZlgTm2NuN1fakd9qOYCDo5Pz9jnc9Wppq992QdVC8" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <noscript><style>.element-animate { opacity: 1; visibility: visible; }</style></noscript>
+  </head>
+  <body>
+    <Header />
+    <HeroImage title={headerText} image={headerImage} fancyFont={fancyFont} />
+    <QuickInfo />
+    <slot />
+    <Footer />
+  </body>
+</html>
