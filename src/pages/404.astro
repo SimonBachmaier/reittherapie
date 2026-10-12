@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteSection from '../components/SiteSection.astro';
+import Text from '../components/Text.astro';
+---
+
+<BaseLayout siteTitle="Seite nicht gefunden" headerText="Seite nicht gefunden">
+  <SiteSection>
+    <Text centered subheadline="Die angeforderte Seite existiert leider nicht (mehr).">
+      <p><a href="/">Zur Startseite</a></p>
+    </Text>
+  </SiteSection>
+</BaseLayout>

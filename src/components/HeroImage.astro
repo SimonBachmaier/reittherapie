@@ -1,0 +1,42 @@
+---
+import type { ImageMetadata } from 'astro';
+import { getImage } from 'astro:assets';
+import Reveal from './Reveal.astro';
+
+interface Props {
+  title: string;
+  image?: ImageMetadata;
+  fancyFont?: boolean;
+}
+
+const { title, image, fancyFont = false } = Astro.props;
+const background = image ? await getImage({ src: image, width: 2048 }) : undefined;
+---
+
+{
+  background ? (
+    <section class="site-hero overlay" style={`background-image: url('${background.src}')`}>
+      <div class="container">
+        <div class="row align-items-center site-hero-inner justify-content-center">
+          <div class="col-md-8 text-center">
+            <Reveal class="mb-5">
+              <h1 class:list={{ 'site-title-fancy': fancyFont }}>{title}</h1>
+            </Reveal>
+          </div>
+        </div>
+      </div>
+    </section>
+  ) : (
+    <section class="site-hero-no-image">
+      <div class="container">
+        <div class="row align-items-center site-hero-inner justify-content-center">
+          <div class="col-md-8 text-center">
+            <Reveal class="mb-5">
+              <h1>{title}</h1>
+            </Reveal>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

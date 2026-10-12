@@ -1,0 +1,14 @@
+---
+interface Props {
+  class?: string;
+  noMargin?: boolean;
+}
+
+const { class: className = '', noMargin = false } = Astro.props;
+---
+
+<section class:list={[className, { 'site-section': !noMargin }]}>
+  <div class="container">
+    <slot />
+  </div>
+</section>

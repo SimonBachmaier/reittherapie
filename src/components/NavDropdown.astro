@@ -1,0 +1,16 @@
+---
+interface Props {
+  label: string;
+  active: boolean;
+  items: { href: string; label: string }[];
+}
+
+const { label, active, items } = Astro.props;
+---
+
+<div class="dropdown nav-item">
+  <a class:list={['dropdown-toggle nav-link', { active }]} href="#" role="button" aria-haspopup="true" aria-expanded="false">{label}</a>
+  <div class="dropdown-menu">
+    {items.map((item) => <a class="dropdown-item" href={item.href}>{item.label}</a>)}
+  </div>
+</div>

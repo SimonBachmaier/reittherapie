@@ -1,0 +1,20 @@
+---
+interface Props {
+  class?: string;
+  centered?: boolean;
+  headline?: string;
+  subheadline?: string;
+  html?: string;
+}
+
+const { class: className = '', centered = false, headline, subheadline, html } = Astro.props;
+---
+
+<div class:list={['row', className, { 'justify-content-center': centered }]}>
+  <div class:list={[centered ? 'col-md-8' : 'col-md-12', { 'text-center': centered }]}>
+    {headline && <h1 class="mb-3">{headline}</h1>}
+    {subheadline && <p class="lead">{subheadline}</p>}
+    <slot />
+    {html && <div set:html={html} />}
+  </div>
+</div>

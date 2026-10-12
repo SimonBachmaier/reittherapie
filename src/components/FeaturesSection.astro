@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import { getLeistungen } from '../lib/content';
+
+interface Props {
+  excludeId?: string;
+}
+
+const { excludeId } = Astro.props;
+const leistungen = (await getLeistungen()).filter((e) => e.id !== excludeId);
+---
+
+<div class="row justify-content-center">
+  {
+    leistungen.map((entry) => (
+      <div class="col-md-6 col-lg-4">
+        <a class="media d-block media-feature text-center" href={`/leistungen/${entry.id}/`}>
+          <div class="mr-3 icon-wrap">
+            <span class="custom-icon flaticon-scissors-1"></span>
+          </div>
+          <div class="media-body">
+            <h3>{entry.data.name}</h3>
+            <Image class="feature-preview-image" src={entry.data.previewImage} alt={entry.data.name} width={512} />
+          </div>
+        </a>
+      </div>
+    ))
+  }
+</div>

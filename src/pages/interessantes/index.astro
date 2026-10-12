@@ -1,0 +1,40 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteSection from '../../components/SiteSection.astro';
+import Text from '../../components/Text.astro';
+import TextImage from '../../components/TextImage.astro';
+import HorseCarousel from '../../components/HorseCarousel.astro';
+
+const page = await getEntry('seiten', 'interessantes');
+if (!page) throw new Error('src/content/seiten/interessantes.md is missing');
+
+const news = await Promise.all(
+  (await getCollection('interessantes'))
+    .sort((a, b) => a.id.localeCompare(b.id))
+    .map(async (entry) => ({ entry, Content: (await render(entry)).Content }))
+);
+---
+
+<BaseLayout headerText={page.data.siteTitle} headerImage={page.data.headerImage}>
+  <SiteSection>
+    <Text centered headline={page.data.siteTitle} subheadline={page.data.description ?? undefined} />
+    {
+      news.map(({ entry, Content }, index) => (
+        <TextImage
+          class="pt-5"
+          image={entry.data.image}
+          headline={entry.data.headline}
+          subheadline={entry.data.subheadline}
+          imageRight={index % 2 === 1}
+        >
+          <div><Content /></div>
+        </TextImage>
+      ))
+    }
+  </SiteSection>
+
+  <SiteSection>
+    <HorseCarousel />
+  </SiteSection>
+</BaseLayout>
